@@ -23,19 +23,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@master
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-
-      - name: Deploy to s3 # S3にデプロイ
-        run: |
-          aws s3 cp --recursive --region ap-northeast-1 . s3://irodori-cdk
+      - name: Publish to AWS S3
+        uses: opspresso/action-s3-sync@master
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        # S3のbucket-for-deploying-react-projectバケットにデプロイ
-
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          FROM_PATH: "."
+          DEST_PATH: "s3://irodori-cdk"
+          # S3のbucket-for-deploying-react-projectバケットにデプロイ
       - name: delete cloudfront Cache  # S3にデプロイ
         uses: chetan/invalidate-cloudfront-action@v1.2
         env:
@@ -43,4 +39,4 @@ jobs:
           PATHS: "/*"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'ap-northeast-1'
+          AWS_REGION: ${{ secrets.AWS_REGION }}
