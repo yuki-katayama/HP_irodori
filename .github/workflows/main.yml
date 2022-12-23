@@ -34,13 +34,12 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DISTROBUTION_ID: ${{ secrets.AWS_DISTROBUTION_ID }}
         # S3のbucket-for-deploying-react-projectバケットにデプロイ
 
       - name: delete cloudfront Cache  # S3にデプロイ
         uses: chetan/invalidate-cloudfront-action@v1.2
         env:
-          DISTRIBUTION: ${{ secrets.AWS_DISTROBUTION_ID }}
+          DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_ID }}
           PATHS: "/*"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
