@@ -27,11 +27,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: cd my-portfolio-aws
       - run: npm ci
       - run: npm run build
       - run: npm test
-      - run: cd ..
 
       - name: Deploy  # S3にデプロイ
         env:
