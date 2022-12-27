@@ -1,0 +1,15 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//scheduleセクションのモジュールの設定を定義します
+
+#schedule {
+	height: 40vh;
+	background: linear-gradient(to bottom, $content-color02 0%, $content-color02 50%, $content-color01 50%, $content-color01 100%);
+	padding-top: 15rem;
+	h2 {
+		text-align: center;
+		font-size: 6rem;
+	}
+}

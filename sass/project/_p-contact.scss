@@ -1,0 +1,42 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//contactセクションのモジュールの設定を定義します
+
+#contact {
+	position: relative;
+	padding: 12rem 16rem 24.5rem;
+	h2 {
+		font-size: 10rem;
+	}
+	p {
+		margin-top: 4,7rem;
+		margin-bottom: 17rem;
+		font-size: 3.6rem;
+	}
+	.p-button_wrapper {
+		width: 60rem;
+		height: 10rem;
+	}
+	.p-fig_contact1, .p-fig_contact2 {
+		position: absolute;
+	}
+	.p-fig_contact1 {
+		@include position-absolute-br(5rem, 16rem);
+		width: 30%;
+	}
+	.p-fig_contact2 {
+		@include position-absolute-br(42rem, 6.8rem);
+		width: 15%;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		@include position-absolute-bl;
+		width: 133.6rem;
+		height: 68.2rem;
+		background-color: $content-color05;
+		z-index: -1;
+	}
+}

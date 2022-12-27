@@ -1,0 +1,102 @@
+// settingフォルダの変数を読み込みます
+@use "../setting"as *;
+
+/* common */
+@mixin none {
+  display: none;
+}
+
+/* position */
+@mixin position-fixed-tl0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@mixin position-absolute-tl($top: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin position-absolute-tr($top: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin position-absolute-bl($bottom: 0, $left: 0) {
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin position-absolute-br($bottom: 0, $right: 0) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* button */
+// @mixin button-area {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+// }
+
+// @mixin button {
+//   position: absolute;
+//   display: block;
+//   text-align: center;
+// //   @include text-m;
+//   line-height: 30px;
+//   letter-spacing: 0.15em;
+//   border: 1px solid #000;
+//   margin-top: 0;
+//   box-shadow: 0 5px $content-color01;
+//   cursor: pointer;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   -webkit-transition: all 0.3s;
+//   transition: all 0.3s;
+
+//   &:hover {
+//     color: $content-color01;
+//     border: 1px solid $content-color01;
+//     margin-top: 3px;
+//     box-shadow: 0 2px $content-color01;
+//   }
+// }
+
+/* shadow */
+@mixin drop-shadow-xl {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.4));
+}
+@mixin drop-shadow-l {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+}
+@mixin drop-shadow-m {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+}
+@mixin drop-shadow-s {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+}
+@mixin box-shadow {
+  box-shadow: 0 10px 25px 0 rgba(204, 204, 204, 0.4);
+}
+@mixin box-shadow-focus {
+  box-shadow: 0 0 5px 0 rgba(232,88,153,1);
+}

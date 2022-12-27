@@ -1,0 +1,33 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//トップセクションのモジュールの設定を定義します
+
+#top {
+	@include full-screen;
+	@include img-cover;
+	background: url("../images/top_background.jpg");
+	position: relative;
+	margin-top: $height-header;
+	padding: 10rem 16rem;
+	font-size: 1rem;
+	h2 {
+		font-size: 4.2rem;
+		margin-bottom: 8.6rem;
+		line-height: 9rem;
+	}
+	p {
+		font-size: 2rem;
+		margin-bottom: 3rem;
+	}
+	figure {
+		width: 30%;
+	}
+	.p-fig_top1 {
+		@include position-absolute-tr(5.35rem, 7.6rem);
+	}
+	.p-fig_top2 {
+		@include position-absolute-br(0, 33rem);
+	}
+}

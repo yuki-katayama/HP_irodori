@@ -1,0 +1,27 @@
+//色に関する変数を登録します
+$content-color01: #1B519F;
+$content-color02: #FAF9F5;
+$content-color03: #E989AE;
+$content-color04: #FF0000;
+$content-color05: #F2EFE9;
+
+$button-left-color: #21529F;
+$button-right-color: #E387AD;
+
+/* text-color */
+.text-blue {
+  color: $content-color01;
+}
+
+.text-white {
+  color: $content-color02;
+}
+
+.text-pink {
+  color: $content-color03;
+}
+
+.text-red {
+  color: $content-color04;
+}
+

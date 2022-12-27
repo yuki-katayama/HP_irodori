@@ -1,0 +1,18 @@
+//フォントに関する変数を登録します
+$common-font: 'Zen Kaku Gothic New', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+$eng-font: 'Roboto', sans-serif;
+body {
+  font-family: $common-font;
+}
+// html {
+//   font-family: $common-font;
+// }
+// body {
+// h1 {@include text-xl;}
+// h2 {@include text-xl;}
+// h3 {@include text-l;}
+// p {@include text-m;}
+// a, div, li, dt, dd, span {@include text-m;}
+// }
+// b, strong, .bold {@include text-bold;}
+// pre {font-family: $common-font;}
