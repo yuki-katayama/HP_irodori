@@ -4,18 +4,19 @@
 
 //visionセクションの設定を定義します
 #vision {
-	padding: 30rem 32rem 0;
+	padding: 30rem 32rem 15rem;
 	position: relative;
 	background-color: $content-color01;
 	p {
 		font-size: 2.7rem;
 		line-height: 6.5rem;
 		letter-spacing: 0.3rem;
+		margin-bottom: 7rem;
 	}
 	h2 {
 		font-size: 26rem;
 		position: absolute;
-		top: -7rem;
+		top: -6rem;
 		left: 11.5rem;
 	}
 	.p-fig_vision1, .p-fig_vision2, .p-fig_vision3 {
@@ -32,34 +33,5 @@
 	.p-fig_vision3 {
 		top: 95.4rem;
 		right: 30.2rem;
-	}
-	.p-border {
-		@include w-100;
-		height: 3px;
-		margin: 14rem 0 7rem 0;
-		border-bottom: solid 3px $content-color02;
-	}
-	h3 {
-		font-size: 3.7rem;
-		text-align: center;
-		margin-bottom: 6rem;
-	}
-	.p-card {
-		&_container {
-			@include flex-between;
-		}
-		width: 32%;
-		padding: 5.5rem;
-		background-color: $content-color02;
-		text-align: center;
-		border-radius: 20rem 20rem 0 0;
-		h4 {
-			font-size: 2.7rem;
-			margin: 6rem 0 3rem 0;
-		}
-		p {
-			font-size: 2rem;
-			line-height: unset;
-		}
 	}
 }

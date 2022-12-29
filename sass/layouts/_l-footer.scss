@@ -1,0 +1,19 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//フッターのレイアウトの設定を定義します
+
+
+footer {
+	position: relative;
+	text-align: center;
+	height: $height-footer;
+	margin-bottom: 2.4rem;
+	p {
+		@include position-absolute-bl(0, 50%);
+		transform:translate(-50%, 0);
+		font-size: 1.5rem;
+		bottom: 0;
+	}
+}

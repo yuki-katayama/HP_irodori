@@ -7,24 +7,19 @@
 #projects {
 	padding: 18rem 32rem 15rem;
 	background-color: $content-color05;
+	text-align: center;
 	h2 {
-		text-align: center;
 		font-size: 6rem;
 		margin-bottom: 7.6rem;
 	}
-	.p-blank {
-		height: 4.6rem;
-	}
 	.p-card {
 		&_container {
-			@include flex-row;
+			@include flex-unit;
 		}
-		padding: 4rem 5.7rem 5rem;
-		width: 44%;
+		padding: 4rem 4.2rem 5rem;
+		margin: 4rem 4.5rem 7.6rem;
+		width: 42%;
 		background-color: $content-color02;
-		h3, h4 {
-			text-align: center;
-		}
 		h3 {
 			font-size: 2.7rem;
 		}

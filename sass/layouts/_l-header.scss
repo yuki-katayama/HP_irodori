@@ -12,7 +12,11 @@
 	background-color: $content-color05;
 	height: $height-header;
 	padding: 0 5rem;
-	.l-fig_header1 {
+	h2 {
+		font-size: 4rem;
+		margin-left: 3rem;
+	}
+	.l-fig_header_img {
 		width: 20%;
 	}
 	.l-inner {
@@ -25,9 +29,12 @@
 	}
 	.l-fig_header {
 		@include flex-just-start;
+		width: 20%;
+	}
+	.l-flex_center {
+		@include flex-center;
 	}
 	ul {
-		@include flex-center;
 		li {
 			font-size: 2.5rem;
 			margin: 0 5rem;

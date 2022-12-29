@@ -5,11 +5,61 @@
 //scheduleセクションのモジュールの設定を定義します
 
 #schedule {
-	height: 40vh;
-	background: linear-gradient(to bottom, $content-color02 0%, $content-color02 50%, $content-color01 50%, $content-color01 100%);
+	background: linear-gradient(to bottom, $content-color02 0%, $content-color02 62%, $content-color01 62%, $content-color01 100%);
 	padding-top: 15rem;
+	text-align: center;
 	h2 {
 		text-align: center;
 		font-size: 6rem;
+		margin-bottom: 10rem;
+	}
+	h3 {
+		font-size: 4.2rem;
+	}
+	p {
+		font-size: 2rem;
+	}
+	.date {
+		font-size: 2.7rem;
+	}
+	.p-fig_schedule {
+		width: 80%;
+		margin-top: 2.5rem;
+		margin-bottom: 4.1rem;
+		margin-left: 50%;
+		transform: translate(-50%, 0)
+	}
+	.p-card {
+		&_container {
+			margin-top: 10rem;
+			display: flex;
+		}
+		.p-fig_schedule {
+			&1, &2, &3, &4 {
+				margin-left: 50%;
+				margin-top: 1.57rem;
+				margin-bottom: 2.83rem;
+				transform: translate(-50%, 0);
+			}
+			&1 {
+				width: 100%;
+			}
+			&2 {
+				width: 50%;
+			}
+			&3 {
+				width: 30%;
+			}
+			&4 {
+				width: 50%;
+			}
+		}
+		border-radius: 100%;
+		height: 49rem;
+		// min-width: 49rem;
+		background-color: $content-color05;
+		width:49rem !important;
+		padding: 3.1rem 9.5rem 7.7rem;
+		margin: 0 3.5rem;
 	}
 }

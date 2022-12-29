@@ -1,0 +1,26 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//sliderの設定を定義します
+.bxslider {
+	// transform: translate3d(-3812px, 0, 0px) !important;
+}
+
+.bx-wrapper {
+	background: unset !important;
+	border: unset !important;
+	box-shadow: unset !important;
+	& .bx-pager.bx-default-pager a {
+		background: $content-color01 !important;
+		border: solid 1px $content-color02 !important;
+		margin: 0 1rem !important;
+		&.active {
+			background: $content-color02 !important;
+		}
+	}
+}
+
+#next-btn, #prev-btn {
+	font-size: 5rem;
+}
