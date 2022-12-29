@@ -5,61 +5,43 @@
 //scheduleセクションのモジュールの設定を定義します
 
 #schedule {
-	background: linear-gradient(to bottom, $content-color02 0%, $content-color02 62%, $content-color01 62%, $content-color01 100%);
+	background: $content-color01;
 	padding-top: 15rem;
 	text-align: center;
+	padding: 15rem 32rem  15rem 40rem;
 	h2 {
 		text-align: center;
 		font-size: 6rem;
 		margin-bottom: 10rem;
 	}
-	h3 {
-		font-size: 4.2rem;
-	}
-	p {
-		font-size: 2rem;
-	}
-	.date {
-		font-size: 2.7rem;
-	}
-	.p-fig_schedule {
-		width: 80%;
-		margin-top: 2.5rem;
-		margin-bottom: 4.1rem;
-		margin-left: 50%;
-		transform: translate(-50%, 0)
-	}
-	.p-card {
-		&_container {
-			margin-top: 10rem;
-			display: flex;
+	.p-container {
+		@include flex-center;
+		position: relative;
+		margin: 3rem 0;
+		height: 20rem;
+		text-align: left;
+		line-height: 3.5rem;
+		.p-icon {
+			position: absolute;
+			left: -10rem;
+			border-radius: 100%;
+			height: 20rem;
+			width: 20rem;
+			background-color: $content-color03;
+			@include flex-center;
 		}
-		.p-fig_schedule {
-			&1, &2, &3, &4 {
-				margin-left: 50%;
-				margin-top: 1.57rem;
-				margin-bottom: 2.83rem;
-				transform: translate(-50%, 0);
+		.p-content {
+			background-color: $content-color02;
+			height: 16rem;
+			width: 100%;
+			padding: 0 2.8rem 0 12rem;
+			@include flex-between-center;
+			h3 {
+				font-size: 4.2rem;
 			}
-			&1 {
-				width: 100%;
-			}
-			&2 {
-				width: 50%;
-			}
-			&3 {
-				width: 30%;
-			}
-			&4 {
-				width: 50%;
+			time, p {
+				font-size: 2.2rem;
 			}
 		}
-		border-radius: 100%;
-		height: 49rem;
-		// min-width: 49rem;
-		background-color: $content-color05;
-		width:49rem !important;
-		padding: 3.1rem 9.5rem 7.7rem;
-		margin: 0 3.5rem;
 	}
 }

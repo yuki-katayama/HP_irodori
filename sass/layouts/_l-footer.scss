@@ -6,10 +6,14 @@
 
 
 footer {
+	@include flex-center;
 	position: relative;
 	text-align: center;
 	height: $height-footer;
 	margin-bottom: 2.4rem;
+	.p-fig {
+		@include flex-center;
+	}
 	p {
 		@include position-absolute-bl(0, 50%);
 		transform:translate(-50%, 0);

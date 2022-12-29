@@ -5,7 +5,6 @@
 //トップセクションのモジュールの設定を定義します
 
 #top {
-	@include full-screen;
 	@include img-cover;
 	background: url("../images/top_background.jpg");
 	position: relative;
@@ -26,9 +25,11 @@
 		width: 30%;
 	}
 	.p-fig_top1 {
-		@include position-absolute-tr(5.35rem, 7.6rem);
+		@include position-absolute-tr(3.35rem, 3.6rem);
+		position: absolute;
+		width: 28%;
 	}
 	.p-fig_top2 {
-		@include position-absolute-br(0, 33rem);
+		@include position-absolute-br(0, 37rem);
 	}
 }
