@@ -818,7 +818,7 @@ html {
 }
 @media screen and (min-width: 1025px) {
   #projects .p-card {
-    width: 59.5rem;
+    width: 54.5rem;
     margin: 4rem 4.5rem 7.6rem;
   }
   #projects .p-card_container {
