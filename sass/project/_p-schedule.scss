@@ -49,6 +49,11 @@
 				width: 16rem;
 			}
 			.p-fig_schedule {
+				@include mq($pc) {
+					&1, &2, &3, &4 {
+						width: 100%;
+					}
+				}
 				@include mq($sp) {
 					&1, &2 {
 						width: 60%;
