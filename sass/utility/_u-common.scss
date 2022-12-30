@@ -19,17 +19,17 @@
   display: block;
 }
 
-@include mq($tab) {
-  .sp {
-    display: none;
-  }
-  .tab {
-    display: block;
-  }
-  .pc {
-    display: none;
-  }
-}
+// @include mq($tab) {
+//   .sp {
+//     display: none;
+//   }
+//   .tab {
+//     display: block;
+//   }
+//   .pc {
+//     display: none;
+//   }
+// }
 
 @include mq($sp) {
   .sp {
