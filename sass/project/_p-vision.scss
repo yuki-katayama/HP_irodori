@@ -10,7 +10,7 @@
 		padding: 30rem 32rem 15rem;
 	}
 	@include mq($sp) {
-		padding: 6rem 15rem 72.9rem;
+		padding: 15rem 6rem 72.9rem;
 	}
 	h2 {
 		@include mq($pc) {
@@ -21,13 +21,19 @@
 		}
 		@include mq($sp) {
 			font-size: 10rem;
+			margin-bottom: 12.5rem;
 			text-align: center;
 		}
 	}
 	p {
-		font-size: 2.7rem;
 		line-height: 6.5rem;
 		letter-spacing: 0.3rem;
+		@include mq($pc) {
+			font-size: 2.7rem;
+		}
+		@include mq($sp) {
+			font-size: 2.2rem;
+		}
 	}
 	@include mq($pc) {
 		.p-fig_vision1 {

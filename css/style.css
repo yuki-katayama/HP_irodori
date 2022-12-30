@@ -591,7 +591,7 @@ html {
 }
 @media screen and (max-width: 767px) {
   #vision {
-    padding: 6rem 15rem 72.9rem;
+    padding: 15rem 6rem 72.9rem;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -605,13 +605,23 @@ html {
 @media screen and (max-width: 767px) {
   #vision h2 {
     font-size: 10rem;
+    margin-bottom: 12.5rem;
     text-align: center;
   }
 }
 #vision p {
-  font-size: 2.7rem;
   line-height: 6.5rem;
   letter-spacing: 0.3rem;
+}
+@media screen and (min-width: 1025px) {
+  #vision p {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #vision p {
+    font-size: 2.2rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   #vision .p-fig_vision1 {
@@ -1010,8 +1020,15 @@ html {
     margin-bottom: 9.2rem;
   }
 }
-#contact h3, #contact span {
-  font-size: 2.7rem;
+@media screen and (min-width: 1025px) {
+  #contact h3, #contact span {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact h3, #contact span {
+    font-size: 3rem;
+  }
 }
 #contact p {
   line-height: 6.5rem;
