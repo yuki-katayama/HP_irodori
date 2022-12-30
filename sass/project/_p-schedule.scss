@@ -8,34 +8,74 @@
 	background: $content-color01;
 	padding-top: 15rem;
 	text-align: center;
-	padding: 15rem 32rem  15rem 40rem;
+	@include mq($pc) {
+		padding: 15rem 32rem  15rem 40rem;
+	}
+	@include mq($sp) {
+		padding: 15rem 6rem 15rem 14rem;
+	}
 	h2 {
 		text-align: center;
-		font-size: 6rem;
-		margin-bottom: 10rem;
+		@include mq($pc) {
+			font-size: 6rem;
+			margin-bottom: 10rem;
+		}
+		@include mq($sp) {
+			font-size: 5.5rem;
+			margin-bottom: 13.7rem;
+		}
 	}
 	.p-container {
 		@include flex-center;
 		position: relative;
 		margin: 3rem 0;
-		height: 20rem;
 		text-align: left;
 		line-height: 3.5rem;
+		@include mq($pc) {
+			height: 20rem;
+		}
 		.p-icon {
+			@include flex-center;
 			position: absolute;
 			left: -10rem;
 			border-radius: 100%;
-			height: 20rem;
-			width: 20rem;
 			background-color: $content-color03;
-			@include flex-center;
+			@include mq($pc) {
+				height: 20rem;
+				width: 20rem;
+			}
+			@include mq($sp) {
+				height: 16rem;
+				width: 16rem;
+			}
+			.p-fig_schedule {
+				@include mq($sp) {
+					&1, &2 {
+						width: 60%;
+					}
+					&3, &4 {
+						width: 38%;
+					}
+				}
+			}
 		}
 		.p-content {
 			background-color: $content-color02;
-			height: 16rem;
 			width: 100%;
 			padding: 0 2.8rem 0 12rem;
-			@include flex-between-center;
+			@include mq($pc){
+				@include flex-between-align-center;
+				height: 16rem;
+			}
+			@include mq($sp){
+				@include flex-column-just-center;
+				height: 32.2rem;
+				time {
+					@include flex-between;
+					width: 70%;
+					margin: 2.3rem 0 3.2rem 0;
+				}
+			}
 			h3 {
 				font-size: 4.2rem;
 			}

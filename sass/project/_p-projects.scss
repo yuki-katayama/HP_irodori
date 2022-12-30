@@ -5,21 +5,43 @@
 //projectsセクションのモジュールの設定を定義します
 
 #projects {
-	padding: 18rem 32rem 15rem;
 	background-color: $content-color05;
 	text-align: center;
+	@include mq($pc) {
+		padding: 18rem 32rem 15rem;
+	}
+	@include mq($sp) {
+		padding: 15rem 6rem;
+		.p-card:last-child {
+			margin-bottom: 0;
+		}
+	}
 	h2 {
-		font-size: 6rem;
-		margin-bottom: 7.6rem;
+		@include mq($pc) {
+			font-size: 6rem;
+			margin-bottom: 15rem;
+		}
+		@include mq($sp) {
+			font-size: 5.5rem;
+			margin-bottom: 12.3rem;
+		}
 	}
 	.p-card {
-		&_container {
-			@include flex-unit;
-		}
 		padding: 4rem 4.2rem 5rem;
-		margin: 4rem 4.5rem 7.6rem;
-		width: 42%;
 		background-color: $content-color02;
+		height: 51.3rem;
+		border: solid 4px $content-color01;
+		@include mq($pc) {
+			width: 59.5rem;
+			margin: 4rem 4.5rem 7.6rem;
+			&_container {
+				@include flex-unit;
+			}
+		}
+		@include mq($sp) {
+			width: 100%;
+			margin: 4rem 0rem 7.6rem;
+		}
 		h3 {
 			font-size: 2.7rem;
 		}
@@ -30,6 +52,7 @@
 		}
 		p {
 			font-size: 2rem;
+			line-height: 3.5rem;
 		}
 		.p-num {
 			font-size: 7.5rem;

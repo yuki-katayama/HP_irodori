@@ -1,0 +1,16 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//baseの設定を定義します
+
+// 1rem = 10px, pc/sp 共通
+html {
+	font-size: 0.521vw;
+}
+
+@include mq($sp) {
+  html {
+    font-size: 1.3333vw;
+  }
+}

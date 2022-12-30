@@ -6,56 +6,118 @@
 
 #contact {
 	position: relative;
-	padding: 12.3rem 16rem 10rem;
+	@include mq($pc){
+		padding: 12.3rem 16rem 10rem;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 44.9rem;
+			bottom: 0;
+			left: 0;
+			width: 133.6rem;
+			background-color: $content-color05;
+			z-index: -1;
+		}
+	}
+	@include mq($sp){
+		padding: 15rem 6rem 0rem;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 59.3rem;
+			bottom: 21.8rem;
+			left: 0;
+			width: 100%;
+			background-color: $content-color05;
+			z-index: -1;
+		}
+	}
 	h2 {
-		font-size: 10rem;
-		margin-right: 46.4rem;
-		margin-bottom: 32.6rem;
+		@include mq($pc){
+			font-size: 10rem;
+			margin-bottom: 32.6rem;
+		}
+		@include mq($sp){
+			font-size: 7.5rem;
+			margin-bottom: 9.2rem;
+		}
 	}
 	h3, span {
 		font-size: 2.7rem;
 	}
 	p {
-		font-size: 3.6rem;
 		line-height: 6.5rem;
 		letter-spacing: 0.5rem;
 	}
 	ul {
 		margin-left: 1rem;
 		list-style: square;
-		width: 98rem;
 		display: inline-block;
 		li {
 			font-size: 1.2rem;
 		}
+		@include mq($pc) {
+			width: 57%;
+		}
+		@include mq($sp) {
+			width: 90%;
+		}
+	}
+	.p-upper {
+		@include mq($pc) {
+			@include flex-between;
+			p {
+				font-size: 3.6rem;
+			}
+		}
+		@include mq($sp) {
+			text-align: center;
+			margin-bottom: 10rem;
+			p {
+				font-size: 3rem;
+			}
+		}
 	}
 	.p-container {
+		@include mq($sp) {
+			padding-bottom: 15rem;
+		}
+	}
+	.p-container-text {
+		margin-bottom: 13.6rem;
 		line-height: 7rem;
-		margin-bottom: 13.7rem;
+		p {
+			font-size: 3.6rem;
+		}
 	}
 	.p-button_wrapper {
-		width: 60rem;
 		height: 10rem;
+		@include mq($pc) {
+			width: 60rem;
+		}
+		@include mq($sp) {
+			width: 50rem;
+			margin-left: 50%;
+			transform: translate(-50%, 0);
+		}
 	}
-	.p-fig_contact1, .p-fig_contact2 {
-		position: absolute;
+	@include mq($pc) {
+		.p-fig_contact1 {
+			@include position-absolute-br(10rem, 16rem);
+			width: 32.4%;
+		}
+		.p-fig_contact2 {
+			@include position-absolute-br(51rem, 6.8rem);
+			width: 15%;
+		}
 	}
-	.p-fig_contact1 {
-		@include position-absolute-br(8rem, 16rem);
-		width: 30%;
-	}
-	.p-fig_contact2 {
-		@include position-absolute-br(52rem, 6.8rem);
-		width: 15%;
-	}
-	&::before {
-		content: '';
-		position: absolute;
-		top: 44.9rem;
-		bottom: 0;
-		left: 0;
-		width: 133.6rem;
-		background-color: $content-color05;
-		z-index: -1;
+	@include mq($sp) {
+		.p-fig_contact1 {
+			width: 100%;
+		}
+		.p-fig_contact2 {
+			@include position-absolute-br(41rem, 6.8rem);
+			width: 29%;
+		}
 	}
 }

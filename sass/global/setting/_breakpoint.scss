@@ -3,5 +3,7 @@ $sp: "screen and (max-width: 767px)";
 $tab: "screen and (min-width: 768px) and (max-width: 1024)";
 $pc: "screen and (min-width: 1025px)";
 
-$height-header: 13.8rem;
-$height-footer: 46.6rem;
+$height-header-pc: 13.8rem;
+$height-header-sp: 11rem;
+$height-footer-pc: 46.6rem;
+$height-footer-sp: 35.4rem;

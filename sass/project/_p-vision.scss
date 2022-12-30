@@ -4,34 +4,54 @@
 
 //visionセクションの設定を定義します
 #vision {
-	padding: 30rem 32rem 15rem;
 	position: relative;
 	background-color: $content-color01;
+	@include mq($pc) {
+		padding: 30rem 32rem 15rem;
+	}
+	@include mq($sp) {
+		padding: 6rem 15rem 72.9rem;
+	}
+	h2 {
+		@include mq($pc) {
+			font-size: 26rem;
+			position: absolute;
+			top: -6rem;
+			left: 11.5rem;
+		}
+		@include mq($sp) {
+			font-size: 10rem;
+			text-align: center;
+		}
+	}
 	p {
 		font-size: 2.7rem;
 		line-height: 6.5rem;
 		letter-spacing: 0.3rem;
-		margin-bottom: 7rem;
 	}
-	h2 {
-		font-size: 26rem;
-		position: absolute;
-		top: -6rem;
-		left: 11.5rem;
+	@include mq($pc) {
+		.p-fig_vision1 {
+			@include position-absolute-tr(16rem, 37.2rem);
+		}
+		.p-fig_vision2 {
+			@include position-absolute-tr(54.6rem, 16rem);
+		}
+		.p-fig_vision3 {
+			@include position-absolute-tr(95.4rem, 30.2rem);
+		}
 	}
-	.p-fig_vision1, .p-fig_vision2, .p-fig_vision3 {
-		position: absolute;
-	}
-	.p-fig_vision1 {
-		top: 16rem;
-		right: 37.2rem;
-	}
-	.p-fig_vision2 {
-		top: 54.6rem;
-		right: 16rem;
-	}
-	.p-fig_vision3 {
-		top: 95.4rem;
-		right: 30.2rem;
+	@include mq($sp) {
+		.p-fig_vision1 {
+			width: 30%;
+			@include position-absolute-bl(33.8rem, 6rem);
+		}
+		.p-fig_vision2 {
+			width: 30%;
+			@include position-absolute-bl(10rem, 22.9rem);
+		}
+		.p-fig_vision3 {
+			width: 40%;
+			@include position-absolute-bl(32rem, 43rem);
+		}
 	}
 }

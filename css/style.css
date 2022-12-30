@@ -20,7 +20,6 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3*/
-  font-size: 62.5%; /* -> 10px */
 }
 
 /* Sections */
@@ -408,6 +407,15 @@ body {
 /* position */
 /* button */
 /* shadow */
+html {
+  font-size: 0.521vw;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 1.3333vw;
+  }
+}
 /* button */
 .button {
   width: 100%;
@@ -438,6 +446,26 @@ body {
 
 #next-btn, #prev-btn {
   font-size: 5rem;
+}
+
+.hamburger {
+  transition: ease 0.4s;
+  height: 10rem;
+  width: 10rem;
+}
+.hamburger_color {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.hamburger:nth-child(1) {
+  top: 0;
+}
+.hamburger:nth-child(2) {
+  margin: 8px 0;
+}
+.hamburger:nth-child(3) {
+  top: 0;
 }
 
 .u-flex {
@@ -479,114 +507,261 @@ body {
   }
 }
 #top {
+  background: url("../images/top_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background: url("../images/top_background.jpg");
   position: relative;
-  margin-top: 13.8rem;
-  padding: 10rem 16rem;
-  font-size: 1rem;
+}
+@media screen and (min-width: 1025px) {
+  #top {
+    margin-top: 13.8rem;
+    padding: 10rem 16rem;
+    height: calc(100vh - 13.8rem);
+  }
+}
+@media screen and (max-width: 767px) {
+  #top {
+    margin-top: 11rem;
+    padding: 10rem 6rem;
+    height: calc(100vh - 11rem);
+  }
 }
 #top h2 {
-  font-size: 4.2rem;
-  margin-bottom: 8.6rem;
   line-height: 9rem;
+}
+@media screen and (min-width: 1025px) {
+  #top h2 {
+    font-size: 4.2rem;
+    margin-bottom: 6.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #top h2 {
+    font-size: 3.6rem;
+    margin-bottom: 4.6rem;
+  }
 }
 #top p {
   font-size: 2rem;
   margin-bottom: 4rem;
   line-height: 4rem;
 }
-#top figure {
-  width: 30%;
+@media screen and (min-width: 1025px) {
+  #top .p-fig_top1 {
+    position: absolute;
+    bottom: 20.3rem;
+    right: 3.6rem;
+    width: 27%;
+  }
 }
-#top .p-fig_top1 {
-  position: absolute;
-  top: 3.35rem;
-  right: 3.6rem;
-  position: absolute;
-  width: 28%;
+@media screen and (max-width: 767px) {
+  #top .p-fig_top1 {
+    position: absolute;
+    bottom: 16.8rem;
+    right: 0;
+    width: 36%;
+  }
 }
-#top .p-fig_top2 {
-  position: absolute;
-  bottom: 0;
-  right: 37rem;
+@media screen and (min-width: 1025px) {
+  #top .p-fig_top2 {
+    position: absolute;
+    bottom: 0;
+    right: 33rem;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #top .p-fig_top2 {
+    position: absolute;
+    bottom: 0;
+    right: 17.9rem;
+    width: 45%;
+  }
 }
 
 #vision {
-  padding: 30rem 32rem 15rem;
   position: relative;
   background-color: #1B519F;
+}
+@media screen and (min-width: 1025px) {
+  #vision {
+    padding: 30rem 32rem 15rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #vision {
+    padding: 6rem 15rem 72.9rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #vision h2 {
+    font-size: 26rem;
+    position: absolute;
+    top: -6rem;
+    left: 11.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #vision h2 {
+    font-size: 10rem;
+    text-align: center;
+  }
 }
 #vision p {
   font-size: 2.7rem;
   line-height: 6.5rem;
   letter-spacing: 0.3rem;
-  margin-bottom: 7rem;
 }
-#vision h2 {
-  font-size: 26rem;
-  position: absolute;
-  top: -6rem;
-  left: 11.5rem;
+@media screen and (min-width: 1025px) {
+  #vision .p-fig_vision1 {
+    position: absolute;
+    top: 16rem;
+    right: 37.2rem;
+  }
+  #vision .p-fig_vision2 {
+    position: absolute;
+    top: 54.6rem;
+    right: 16rem;
+  }
+  #vision .p-fig_vision3 {
+    position: absolute;
+    top: 95.4rem;
+    right: 30.2rem;
+  }
 }
-#vision .p-fig_vision1, #vision .p-fig_vision2, #vision .p-fig_vision3 {
-  position: absolute;
-}
-#vision .p-fig_vision1 {
-  top: 16rem;
-  right: 37.2rem;
-}
-#vision .p-fig_vision2 {
-  top: 54.6rem;
-  right: 16rem;
-}
-#vision .p-fig_vision3 {
-  top: 95.4rem;
-  right: 30.2rem;
+@media screen and (max-width: 767px) {
+  #vision .p-fig_vision1 {
+    width: 30%;
+    position: absolute;
+    bottom: 33.8rem;
+    left: 6rem;
+  }
+  #vision .p-fig_vision2 {
+    width: 30%;
+    position: absolute;
+    bottom: 10rem;
+    left: 22.9rem;
+  }
+  #vision .p-fig_vision3 {
+    width: 40%;
+    position: absolute;
+    bottom: 32rem;
+    left: 43rem;
+  }
 }
 
 #todo {
-  padding: 15rem 32rem;
   text-align: center;
-  line-height: 7rem;
-  letter-spacing: 0.2rem;
 }
-#todo h2 {
-  font-size: 6rem;
+@media screen and (min-width: 1025px) {
+  #todo {
+    padding: 15rem 32rem;
+    line-height: 7rem;
+    letter-spacing: 0.2rem;
+  }
 }
-#todo h3 {
-  font-size: 3.6rem;
+@media screen and (max-width: 767px) {
+  #todo {
+    padding: 15rem 6.5rem;
+    line-height: 5rem;
+  }
+  #todo .p-card:last-child {
+    margin-bottom: 0;
+  }
 }
-#todo h3:nth-child(2) {
-  margin: 15rem 0 9.6rem 0;
+@media screen and (min-width: 1025px) {
+  #todo h2 {
+    font-size: 6rem;
+  }
 }
-#todo h3:nth-child(5) {
-  margin-bottom: 5.9rem;
+@media screen and (max-width: 767px) {
+  #todo h2 {
+    font-size: 5.5rem;
+  }
 }
-#todo p {
-  font-size: 2.7rem;
+@media screen and (min-width: 1025px) {
+  #todo h3 {
+    font-size: 3.6rem;
+  }
+  #todo h3:nth-child(2) {
+    margin: 15rem 0 9.6rem 0;
+  }
+  #todo h3:nth-child(5) {
+    margin-bottom: 5.9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo h3:nth-child(2) {
+    font-size: 3.4rem;
+    margin: 15rem 0 9.2rem 0;
+  }
+  #todo h3:nth-child(5) {
+    font-size: 3.6rem;
+    margin-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #todo p {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo p {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #todo .p-unit {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo .p-unit {
+    font-size: 2.7rem;
+  }
 }
 #todo .p-border {
   width: 100%;
   max-width: 100%;
   height: 3px;
-  margin: 14rem 0 7rem 0;
   border-bottom: solid 3px #1B519F;
+}
+@media screen and (min-width: 1025px) {
+  #todo .p-border {
+    margin: 14rem 0 7rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo .p-border {
+    margin: 9.2rem 0 8rem 0;
+  }
 }
 #todo .p-card {
   line-height: initial;
-  width: 32%;
   padding: 5.5rem 4.1rem;
   text-align: center;
   border-radius: 20rem 20rem 0 0;
   border: solid 4px #1B519F;
+  width: 41rem;
+  height: 63.3rem;
+  margin-bottom: 3rem;
 }
-#todo .p-card_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media screen and (min-width: 1025px) {
+  #todo .p-card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo .p-card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #todo .p-card h4 {
   font-size: 2.7rem;
@@ -607,25 +782,57 @@ body {
 }
 
 #projects {
-  padding: 18rem 32rem 15rem;
   background-color: #FCFAF0;
   text-align: center;
 }
-#projects h2 {
-  font-size: 6rem;
-  margin-bottom: 7.6rem;
+@media screen and (min-width: 1025px) {
+  #projects {
+    padding: 18rem 32rem 15rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #projects {
+    padding: 15rem 6rem;
+  }
+  #projects .p-card:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #projects h2 {
+    font-size: 6rem;
+    margin-bottom: 15rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #projects h2 {
+    font-size: 5.5rem;
+    margin-bottom: 12.3rem;
+  }
 }
 #projects .p-card {
   padding: 4rem 4.2rem 5rem;
-  margin: 4rem 4.5rem 7.6rem;
-  width: 42%;
   background-color: #FFFFFF;
+  height: 51.3rem;
+  border: solid 4px #1B519F;
 }
-#projects .p-card_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-between;
+@media screen and (min-width: 1025px) {
+  #projects .p-card {
+    width: 59.5rem;
+    margin: 4rem 4.5rem 7.6rem;
+  }
+  #projects .p-card_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  #projects .p-card {
+    width: 100%;
+    margin: 4rem 0rem 7.6rem;
+  }
 }
 #projects .p-card h3 {
   font-size: 2.7rem;
@@ -637,6 +844,7 @@ body {
 }
 #projects .p-card p {
   font-size: 2rem;
+  line-height: 3.5rem;
 }
 #projects .p-card .p-num {
   font-size: 7.5rem;
@@ -648,12 +856,31 @@ body {
   background: #1B519F;
   padding-top: 15rem;
   text-align: center;
-  padding: 15rem 32rem 15rem 40rem;
+}
+@media screen and (min-width: 1025px) {
+  #schedule {
+    padding: 15rem 32rem 15rem 40rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #schedule {
+    padding: 15rem 6rem 15rem 14rem;
+  }
 }
 #schedule h2 {
   text-align: center;
-  font-size: 6rem;
-  margin-bottom: 10rem;
+}
+@media screen and (min-width: 1025px) {
+  #schedule h2 {
+    font-size: 6rem;
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #schedule h2 {
+    font-size: 5.5rem;
+    margin-bottom: 13.7rem;
+  }
 }
 #schedule .p-container {
   display: flex;
@@ -661,29 +888,70 @@ body {
   align-items: center;
   position: relative;
   margin: 3rem 0;
-  height: 20rem;
   text-align: left;
   line-height: 3.5rem;
 }
+@media screen and (min-width: 1025px) {
+  #schedule .p-container {
+    height: 20rem;
+  }
+}
 #schedule .p-container .p-icon {
-  position: absolute;
-  left: -10rem;
-  border-radius: 100%;
-  height: 20rem;
-  width: 20rem;
-  background-color: #E989AE;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: -10rem;
+  border-radius: 100%;
+  background-color: #E989AE;
+}
+@media screen and (min-width: 1025px) {
+  #schedule .p-container .p-icon {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #schedule .p-container .p-icon {
+    height: 16rem;
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #schedule .p-container .p-icon .p-fig_schedule1, #schedule .p-container .p-icon .p-fig_schedule2 {
+    width: 60%;
+  }
+  #schedule .p-container .p-icon .p-fig_schedule3, #schedule .p-container .p-icon .p-fig_schedule4 {
+    width: 38%;
+  }
 }
 #schedule .p-container .p-content {
   background-color: #FFFFFF;
-  height: 16rem;
   width: 100%;
   padding: 0 2.8rem 0 12rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  #schedule .p-container .p-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #schedule .p-container .p-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 32.2rem;
+  }
+  #schedule .p-container .p-content time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 2.3rem 0 3.2rem 0;
+  }
 }
 #schedule .p-container .p-content h3 {
   font-size: 4.2rem;
@@ -694,62 +962,144 @@ body {
 
 #contact {
   position: relative;
-  padding: 12.3rem 16rem 10rem;
 }
-#contact h2 {
-  font-size: 10rem;
-  margin-right: 46.4rem;
-  margin-bottom: 32.6rem;
+@media screen and (min-width: 1025px) {
+  #contact {
+    padding: 12.3rem 16rem 10rem;
+  }
+  #contact::before {
+    content: "";
+    position: absolute;
+    top: 44.9rem;
+    bottom: 0;
+    left: 0;
+    width: 133.6rem;
+    background-color: #FCFAF0;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact {
+    padding: 15rem 6rem 0rem;
+  }
+  #contact::before {
+    content: "";
+    position: absolute;
+    top: 59.3rem;
+    bottom: 21.8rem;
+    left: 0;
+    width: 100%;
+    background-color: #FCFAF0;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #contact h2 {
+    font-size: 10rem;
+    margin-bottom: 32.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact h2 {
+    font-size: 7.5rem;
+    margin-bottom: 9.2rem;
+  }
 }
 #contact h3, #contact span {
   font-size: 2.7rem;
 }
 #contact p {
-  font-size: 3.6rem;
   line-height: 6.5rem;
   letter-spacing: 0.5rem;
 }
 #contact ul {
   margin-left: 1rem;
   list-style: square;
-  width: 98rem;
   display: inline-block;
 }
 #contact ul li {
   font-size: 1.2rem;
 }
-#contact .p-container {
+@media screen and (min-width: 1025px) {
+  #contact ul {
+    width: 57%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact ul {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #contact .p-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #contact .p-upper p {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact .p-upper {
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+  #contact .p-upper p {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact .p-container {
+    padding-bottom: 15rem;
+  }
+}
+#contact .p-container-text {
+  margin-bottom: 13.6rem;
   line-height: 7rem;
-  margin-bottom: 13.7rem;
+}
+#contact .p-container-text p {
+  font-size: 3.6rem;
 }
 #contact .p-button_wrapper {
-  width: 60rem;
   height: 10rem;
 }
-#contact .p-fig_contact1, #contact .p-fig_contact2 {
-  position: absolute;
+@media screen and (min-width: 1025px) {
+  #contact .p-button_wrapper {
+    width: 60rem;
+  }
 }
-#contact .p-fig_contact1 {
-  position: absolute;
-  bottom: 8rem;
-  right: 16rem;
-  width: 30%;
+@media screen and (max-width: 767px) {
+  #contact .p-button_wrapper {
+    width: 50rem;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
-#contact .p-fig_contact2 {
-  position: absolute;
-  bottom: 52rem;
-  right: 6.8rem;
-  width: 15%;
+@media screen and (min-width: 1025px) {
+  #contact .p-fig_contact1 {
+    position: absolute;
+    bottom: 10rem;
+    right: 16rem;
+    width: 32.4%;
+  }
+  #contact .p-fig_contact2 {
+    position: absolute;
+    bottom: 51rem;
+    right: 6.8rem;
+    width: 15%;
+  }
 }
-#contact::before {
-  content: "";
-  position: absolute;
-  top: 44.9rem;
-  bottom: 0;
-  left: 0;
-  width: 133.6rem;
-  background-color: #FCFAF0;
-  z-index: -1;
+@media screen and (max-width: 767px) {
+  #contact .p-fig_contact1 {
+    width: 100%;
+  }
+  #contact .p-fig_contact2 {
+    position: absolute;
+    bottom: 41rem;
+    right: 6.8rem;
+    width: 29%;
+  }
 }
 
 #header {
@@ -800,14 +1150,29 @@ body {
   margin: 0 5rem;
 }
 
+@media screen and (max-width: 767px) {
+  #header {
+    height: 11rem;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   text-align: center;
-  height: 46.6rem;
   margin-bottom: 2.4rem;
+}
+@media screen and (min-width: 1025px) {
+  footer {
+    height: 46.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    height: 35.4rem;
+    margin: 0 6rem;
+  }
 }
 footer .p-fig {
   display: flex;
@@ -816,10 +1181,10 @@ footer .p-fig {
 }
 footer p {
   position: absolute;
-  bottom: 0;
+  bottom: 3.6rem;
   left: 50%;
   transform: translate(-50%, 0);
   font-size: 1.5rem;
-  bottom: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

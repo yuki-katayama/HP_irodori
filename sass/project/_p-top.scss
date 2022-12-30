@@ -5,31 +5,53 @@
 //トップセクションのモジュールの設定を定義します
 
 #top {
-	@include img-cover;
 	background: url("../images/top_background.jpg");
+	@include img-cover;
 	position: relative;
-	margin-top: $height-header;
-	padding: 10rem 16rem;
-	font-size: 1rem;
+	@include mq($pc) {
+		margin-top: $height-header-pc;
+		padding: 10rem 16rem;
+		height: calc(100vh - $height-header-pc);
+	}
+	@include mq($sp) {
+		margin-top: $height-header-sp;
+		padding: 10rem 6rem;
+		height: calc(100vh - $height-header-sp);
+	}
 	h2 {
-		font-size: 4.2rem;
-		margin-bottom: 8.6rem;
 		line-height: 9rem;
+		@include mq($pc) {
+			font-size: 4.2rem;
+			margin-bottom: 6.2rem;
+		}
+		@include mq($sp) {
+			font-size: 3.6rem;
+			margin-bottom: 4.6rem;
+		}
 	}
 	p {
 		font-size: 2rem;
 		margin-bottom: 4rem;
 		line-height: 4rem;
 	}
-	figure {
-		width: 30%;
-	}
 	.p-fig_top1 {
-		@include position-absolute-tr(3.35rem, 3.6rem);
-		position: absolute;
-		width: 28%;
+		@include mq($pc) {
+			@include position-absolute-br(20.3rem, 3.6rem);
+			width: 27%;
+		}
+		@include mq($sp) {
+			@include position-absolute-br(16.8rem, 0);
+			width: 36%;
+		}
 	}
 	.p-fig_top2 {
-		@include position-absolute-br(0, 37rem);
+		@include mq($pc) {
+			@include position-absolute-br(0, 33rem);
+			width: 30%;
+		}
+		@include mq($sp) {
+			@include position-absolute-br(0, 17.9rem);
+			width: 45%;
+		}
 	}
 }
