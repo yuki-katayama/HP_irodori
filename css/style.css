@@ -928,8 +928,11 @@ html {
   }
 }
 @media screen and (min-width: 1025px) {
-  #schedule .p-container .p-icon .p-fig_schedule1, #schedule .p-container .p-icon .p-fig_schedule2, #schedule .p-container .p-icon .p-fig_schedule3, #schedule .p-container .p-icon .p-fig_schedule4 {
-    width: 100%;
+  #schedule .p-container .p-icon .p-fig_schedule1, #schedule .p-container .p-icon .p-fig_schedule2 {
+    width: 70%;
+  }
+  #schedule .p-container .p-icon .p-fig_schedule3, #schedule .p-container .p-icon .p-fig_schedule4 {
+    width: 44%;
   }
 }
 @media screen and (max-width: 767px) {
