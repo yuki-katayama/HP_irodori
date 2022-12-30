@@ -11,12 +11,13 @@
 	@include mq($pc) {
 		margin-top: $height-header-pc;
 		padding: 10rem 16rem;
-		height: calc(100vh - $height-header-pc);
+		height: 95rem;
+		max-height: 100vh;
 	}
 	@include mq($sp) {
 		margin-top: $height-header-sp;
 		padding: 10rem 6rem;
-		height: calc(100vh - $height-header-sp);
+		height: 125rem;
 	}
 	h2 {
 		line-height: 9rem;

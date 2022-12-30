@@ -1,19 +1,47 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//hamburgerの設定を定義します
+
 .hamburger {
 	transition: ease 0.4s;
-	height: 10rem;
-    width: 10rem;
-	&_color {
+	height: 100%;
+    width: 6rem;
+	transform: translate(0, 25%);
+	.border {
 		width: 100%;
-		height: 1px;
-		background-color: black;
+		border: solid 2px $content-color01;
+		transition: ease 0.4s;
+		&:nth-child(2) {
+			margin: 1.6rem 0;
+		}
 	}
-	&:nth-child(1) {
-		top: 0;
+	&.active {
+		.border:nth-child(1) {
+			transform: rotate(45deg);
+			margin-top: 18%;
+		}
+		.border:nth-child(2) {
+			opacity: 0;
+		}
+		.border:nth-child(3) {
+			transform: rotate(-45deg);
+			margin-top: -65%;
+		}
 	}
-	&:nth-child(2) {
-		margin: 8px 0;
-	}
-	&:nth-child(3) {
-		top: 0;
+}
+
+.hamburger_nav {
+	position: absolute;
+	inset: 0;
+	transform: translateX(100%);
+	background-color: $content-color02;
+	color: $content-color01;
+	transition: ease 0.4s;
+	height: 100vh;
+	z-index: -1;
+	&.active {
+		transform: translateX(0%);
 	}
 }

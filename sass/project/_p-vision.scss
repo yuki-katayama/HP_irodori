@@ -36,6 +36,9 @@
 		}
 	}
 	@include mq($pc) {
+		.p-fig_vision1, .p-fig_vision2, .p-fig_vision3 {
+			width: 19%;
+		}
 		.p-fig_vision1 {
 			@include position-absolute-tr(16rem, 37.2rem);
 		}
@@ -43,7 +46,7 @@
 			@include position-absolute-tr(54.6rem, 16rem);
 		}
 		.p-fig_vision3 {
-			@include position-absolute-tr(95.4rem, 30.2rem);
+			@include position-absolute-tr(101.4rem, 32.2rem);
 		}
 	}
 	@include mq($sp) {

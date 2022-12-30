@@ -8,30 +8,18 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-	<script lang="js">
-	//   $(document).ready(function(){
-	// 	$('.bxslider').bxSlider({
-	// 	auto: true,
-	// 	pause: 1000,
-	// 	maxSlides: 4,
-	// 	nextSelector:'#next-btn',
-	// 	prevSelector:'#prev-btn',
-	// 	nextText:'',
-	// 	prevText:'',
-	// 	// slideWidth: 640,
-	// 	})
-	//   });
-	</script>
+	<title>ワガママLab</title>
 	<title>Document</title>
+
+	<script src="js/hamburger.js"></script>
+	<script src="js/scrollListener.js"></script>
+	<script src="js/scrollToTop.js"></script>
 </head>
 <header id="header" class="l-header text-blue">
 	<div class="u-flex l-inner">
 		<div class="l-fig_header">
 			<figure class="l-fig_header_img"><img src="images/logo.png" width="100%" /></figure>
-			<div>
-				<h2>鉾田市</h2>
-			</div>
+			<h2>鉾田市</h2>
 		</div>
 		<div class="l-flex_center pc">
 			<ul class="u-flex">
@@ -45,28 +33,55 @@
 				<button class="button text-white">参加応募はこちら</button>
 			</div>
 		</div>
-		<div class="hamburger sp">
-			<div class="hamburger_color">a</div>
-			<div class="hamburger_color">b</div>
-			<div class="hamburger_color"></div>
-		</div1>
+		<div class="sp">
+			<div class="hamburger" onclick="hamburger()">
+				<div class="border"></div>
+				<div class="border"></div>
+				<div class="border"></div>
+			</div>
+			<div class="hamburger_nav">
+				<ul>
+					<li onclick="hamburger()">
+						<a href="#top">Top</a>
+					</li>
+					<li onclick="hamburger()">
+						<a href="#vision">Vision</a>
+					</li>
+					<li onclick="hamburger()">
+						<a href="#todo">What to Do</a>
+					</li>
+					<li onclick="hamburger()">
+						<a href="#projects">Projects</a>
+					</li>
+					<li onclick="hamburger()">
+						<a href="#schedule">Schedule</a>
+					</li>
+				</ul>
+				<div class="l-button_wrapper">
+					<button class="button text-white">参加応募はこちら</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </header>
 <body>
+	<button id="scroll-to-top" onclick=scrollToTop()>
+		<figure>
+			<img src="images/scroll-to-top.svg" width="100%"></img>
+		</figure>
+	</button>
 	<article id="top" class="text-blue">
-		<div>
-			<h2>鉾田市で始まる新たな挑戦に<br/>
-				参加してみませんか?</h2>
-			<p>鉾田市は、新たな取り組みを始めます。<br/>
-				地元で新しい挑戦をすることに興味がある、<br class="sp" />鉾田市にゆかりのある高校生や大学生など<br/>
-				同世代の皆さん向けのプログラムです。</p>
-			<p>「地元から離れて住んでいるけれど、鉾田市が気になる。」<br/>
-				「できることなら、いつか地元に帰りたいと思っている。」<br/>
-				「パソコンを使った仕事など新しい仕事があるなら帰るのに。」</p>
-			<p>鉾田市では「ほこたワガママLab」を立ち上げ、<br/>
-				そんなことを感じている高校生や大学生など<br/>
-				同世代の皆さんと一緒に地域に変化を起こす<br class="sp" />きっかけをつくりたいと考えています。</p>
-		</div>
+		<h2>鉾田市で始まる新たな挑戦に<br/>
+			参加してみませんか?</h2>
+		<p>鉾田市は、新たな取り組みを始めます。<br/>
+			地元で新しい挑戦をすることに興味がある、<br class="sp" />鉾田市にゆかりのある高校生や大学生など<br/>
+			同世代の皆さん向けのプログラムです。</p>
+		<p>「地元から離れて住んでいるけれど、鉾田市が気になる。」<br/>
+			「できることなら、いつか地元に帰りたいと思っている。」<br/>
+			「パソコンを使った仕事など新しい仕事があるなら帰るのに。」</p>
+		<p>鉾田市では「ほこたワガママLab」を立ち上げ、<br/>
+			そんなことを感じている高校生や大学生など<br/>
+			同世代の皆さんと一緒に地域に変化を起こす<br class="sp" />きっかけをつくりたいと考えています。</p>
 		<figure class="p-fig_top1"><img src="images/hokota.jpg" width="100%" /></figure>
 		<figure class="p-fig_top2"><img src="images/top.svg" width="100%" /></figure>
 	</article>

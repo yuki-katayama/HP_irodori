@@ -1,0 +1,14 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global"as *;
+
+//hamburgerの設定を定義します
+
+#scroll-to-top {
+	@include position-fixed-br(5rem, 5rem);
+	z-index: 1;
+	transition: ease 0.1s;
+	figure {
+		width: 100%;
+	}
+}

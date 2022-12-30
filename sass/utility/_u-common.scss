@@ -7,16 +7,16 @@
   display :flex;
 }
 
-.sp {
-  display: none;
-}
-
-.tab {
-  display: none;
-}
-
-.pc {
-  display: block;
+@include mq($pc) {
+  .sp {
+    display: none;
+  }
+  .tab {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
 }
 
 // @include mq($tab) {
@@ -33,12 +33,12 @@
 
 @include mq($sp) {
   .sp {
-    display: block;
+    display: block !important;
   }
   .tab {
-    display: none;
+    display: none !important;
   }
   .pc {
-    display: none;
+    display: none !important;
   }
 }

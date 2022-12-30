@@ -5,12 +5,15 @@
 //baseの設定を定義します
 
 // 1rem = 10px, pc/sp 共通
+// scroll-padding-topはアンカーリンク遷移時に少し上にする
 html {
-	font-size: 0.521vw;
-}
-
-@include mq($sp) {
-  html {
-    font-size: 1.3333vw;
-  }
+	position: relative;
+	@include mq($pc) {
+		font-size: 0.521vw;
+		scroll-padding-top: $height-header-pc;
+	}
+	@include mq($sp) {
+		font-size: 1.3333vw;
+		scroll-padding-top: $height-header-sp;
+	}
 }

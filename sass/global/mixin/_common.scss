@@ -13,6 +13,12 @@
   left: 0;
 }
 
+@mixin position-fixed-br($bottom: 0, $right: 0) {
+  position: fixed;
+  bottom: $bottom;
+  right: $right;
+}
+
 @mixin position-absolute-tl($top: 0, $left: 0) {
   position: absolute;
   top: $top;
