@@ -19,6 +19,12 @@ footer {
 	}
 	.p-fig {
 		@include flex-center;
+		@include mq($pc) {
+			width: 60%;
+		}
+		@include mq($sp) {
+			width: 100%;
+		}
 	}
 	p {
 		@include position-absolute-bl(3.6rem, 50%);
