@@ -23,10 +23,12 @@
 	}
 	&:before {
 		background: linear-gradient(to right, $button-right-color 40%, $button-right-color 100%);
+		border-radius: 5px;
 	}
 	&:after {
 		transition: ease 0.4s;
 		background: linear-gradient(to right, $button-left-color 40%, $button-right-color 100%);
+	    border-radius: 5px;
 	}
 	&:hover {
 		&:after {

@@ -452,10 +452,12 @@ html {
 }
 .button:before {
   background: linear-gradient(to right, #E387AD 40%, #E387AD 100%);
+  border-radius: 5px;
 }
 .button:after {
   transition: ease 0.4s;
   background: linear-gradient(to right, #21529F 40%, #E387AD 100%);
+  border-radius: 5px;
 }
 .button:hover:after {
   opacity: 0;
