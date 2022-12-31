@@ -5,16 +5,19 @@
 //トップセクションのモジュールの設定を定義します
 
 #top {
-	background: url("../images/top_background.jpg");
 	@include img-cover;
 	position: relative;
 	@include mq($pc) {
+		background: url("../images/top_background_pc.jpg");
+		background-size: 100%;
 		margin-top: $height-header-pc;
 		padding: 10rem 16rem;
 		height: 95rem;
 		max-height: 100vh;
 	}
 	@include mq($sp) {
+		background: url("../images/top_background_sp.jpg");
+		background-size: 100%;
 		margin-top: $height-header-sp;
 		padding: 10rem 6rem;
 		height: 125rem;
