@@ -14,6 +14,5 @@ html {
 	}
 	@include mq($sp) {
 		font-size: 1.3333vw;
-		scroll-padding-top: $height-header-sp;
 	}
 }

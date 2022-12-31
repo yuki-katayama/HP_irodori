@@ -8,26 +8,45 @@
 	transition: ease 0.4s;
 	height: 100%;
     width: 6rem;
-	transform: translate(0, 25%);
+	transform: translate(0, 50%);
+	position: relative;
 	.border {
 		width: 100%;
-		border: solid 2px $content-color01;
+		height: 2px;
+		background-color: $content-color01;
 		transition: ease 0.4s;
-		&:nth-child(2) {
-			margin: 1.6rem 0;
+		position: absolute;
+		top: 0rem;
+		&::before {
+			content: "";
+			width: 100%;
+			height: 2px;
+			background-color: $content-color01;
+			transition: ease 0.4s;
+			position: absolute;
+			top: -1.6rem;
+		}
+		&::after {
+			content: "";
+			width: 100%;
+			height: 2px;
+			background-color: $content-color01;
+			transition: ease 0.4s;
+			position: absolute;
+			bottom: -1.6rem;
 		}
 	}
 	&.active {
-		.border:nth-child(1) {
-			transform: rotate(45deg);
-			margin-top: 18%;
+		.border {
+			height: 0;
 		}
-		.border:nth-child(2) {
-			opacity: 0;
-		}
-		.border:nth-child(3) {
+		.border::before {
 			transform: rotate(-45deg);
-			margin-top: -65%;
+			top: 0.2rem;
+		}
+		.border::after {
+			transform: rotate(45deg);
+			top: 0.2rem;
 		}
 	}
 }
