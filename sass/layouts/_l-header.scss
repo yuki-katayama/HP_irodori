@@ -45,12 +45,17 @@
 		@include flex-center;
 	}
 	.l-button_wrapper {
+		button:before, button:after {
+			content: "参加応募はこちら";
+		}
 		@include mq($pc) {
+			font-size: 2.1rem;
 			width: 24.2rem;
 			height: 6.8rem;
 		}
 		@include mq($sp) {
 			margin: auto;
+			font-size: 2.7rem;
 			width: 40rem;
 			height: 10rem;
 		}

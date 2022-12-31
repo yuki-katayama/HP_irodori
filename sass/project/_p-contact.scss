@@ -97,6 +97,10 @@
 	}
 	.p-button_wrapper {
 		height: 10rem;
+		font-size: 2.5rem;
+		button:before, button:after {
+			content: "ほこたワガママLabに参加する";
+		}
 		@include mq($pc) {
 			width: 60rem;
 		}
