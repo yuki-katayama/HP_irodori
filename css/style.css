@@ -551,21 +551,21 @@ html {
   #scroll-to-top figure {
     width: 90%;
   }
+  #scroll-to-top:hover {
+    position: fixed;
+    bottom: 8rem;
+    right: 5rem;
+  }
 }
 @media screen and (max-width: 767px) {
   #scroll-to-top {
     position: fixed;
     bottom: 3rem;
-    right: 4rem;
+    right: 3rem;
   }
   #scroll-to-top figure {
     width: 70%;
   }
-}
-#scroll-to-top:hover {
-  position: fixed;
-  bottom: 8rem;
-  right: 5rem;
 }
 
 .u-flex {

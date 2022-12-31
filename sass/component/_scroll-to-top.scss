@@ -12,14 +12,14 @@
 		figure {
 			width: 90%;
 		}
+		&:hover {
+			@include position-fixed-br(8rem, 5rem);
+		}
 	}
 	@include mq($sp) {
-		@include position-fixed-br(3rem, 4rem);
+		@include position-fixed-br(3rem, 3rem);
 		figure {
 			width: 70%;
 		}
-	}
-	&:hover {
-		@include position-fixed-br(8rem, 5rem);
 	}
 }
