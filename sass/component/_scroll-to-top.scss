@@ -5,11 +5,19 @@
 //hamburgerの設定を定義します
 
 #scroll-to-top {
-	@include position-fixed-br(5rem, 5rem);
 	z-index: 1;
 	transition: ease 0.2s;
-	figure {
-		width: 100%;
+	@include mq($pc) {
+		@include position-fixed-br(5rem, 6rem);
+		figure {
+			width: 90%;
+		}
+	}
+	@include mq($sp) {
+		@include position-fixed-br(3rem, 4rem);
+		figure {
+			width: 70%;
+		}
 	}
 	&:hover {
 		@include position-fixed-br(8rem, 5rem);
