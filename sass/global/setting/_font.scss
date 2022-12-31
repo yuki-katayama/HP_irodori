@@ -1,6 +1,8 @@
 //フォントに関する変数を登録します
-$common-font: 'Zen Kaku Gothic New', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-$eng-font: 'Roboto', sans-serif;
+$common-font: 'Torrent' sans-serif;
+
+@import url('//db.onlinewebfonts.com/c/c481f64b0f240989fa9c6971ea78673f?family=Torrent');
+
 body {
   font-family: $common-font;
 }
