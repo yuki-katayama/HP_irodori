@@ -13,6 +13,11 @@
   justify-content: center;
 }
 
+@mixin flex-align-items {
+  display: flex;
+  align-items: center;
+}
+
 @mixin flex-just-start {
   display: flex;
   justify-content: flex-start;

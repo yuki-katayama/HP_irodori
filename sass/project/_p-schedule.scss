@@ -51,10 +51,10 @@
 			.p-fig_schedule {
 				@include mq($pc) {
 					&1, &2 {
-						width: 70%;
+						width: 65%;
 					}
 					&3, &4 {
-						width: 44%;
+						width: 39%;
 					}
 				}
 				@include mq($sp) {
@@ -70,9 +70,9 @@
 		.p-content {
 			background-color: $content-color02;
 			width: 100%;
-			padding: 0 2.8rem 0 12rem;
+			padding: 0 4.8rem 0 13rem;
 			@include mq($pc){
-				@include flex-between-align-center;
+				@include flex-between-align-center;;
 				height: 16rem;
 			}
 			@include mq($sp){
@@ -88,7 +88,12 @@
 				font-size: 4.2rem;
 			}
 			time, p {
-				font-size: 2.2rem;
+				@include mq($pc) {
+					font-size: 2.2rem;
+				}
+				@include mq($sp) {
+					font-size: 2.7rem;
+				}
 			}
 		}
 	}

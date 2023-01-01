@@ -7,17 +7,19 @@
 	position: relative;
 	background-color: $content-color01;
 	@include mq($pc) {
-		padding: 30rem 32rem 15rem;
+		padding: 0 32rem 15rem;
+		overflow-y: hidden;
 	}
 	@include mq($sp) {
 		padding: 15rem 6rem 72.9rem;
 	}
 	h2 {
+		font-family: 'Sawarabi Mincho', serif;
 		@include mq($pc) {
-			font-size: 26rem;
-			position: absolute;
-			top: -6rem;
-			left: 11.5rem;
+			font-size: 23rem;
+			line-height: 15.5rem;
+			margin-left: -20rem;
+			margin-bottom: 12rem;
 		}
 		@include mq($sp) {
 			font-size: 10rem;
@@ -27,27 +29,28 @@
 	}
 	p {
 		line-height: 6.5rem;
-		letter-spacing: 0.3rem;
 		@include mq($pc) {
 			font-size: 2.7rem;
+			letter-spacing: 0.3rem;
 		}
 		@include mq($sp) {
-			font-size: 2.2rem;
+			font-size: 2.6rem;
+			letter-spacing: 0.23rem;
 		}
 	}
 	@include mq($pc) {
 		.p-fig_vision1, .p-fig_vision2, .p-fig_vision3 {
 		}
 		.p-fig_vision1 {
-			width: 16%;
+			width: 15%;
 			@include position-absolute-tr(16rem, 37.2rem);
 		}
 		.p-fig_vision2 {
-			width: 18%;
+			width: 15%;
 			@include position-absolute-tr(54.6rem, 16rem);
 		}
 		.p-fig_vision3 {
-			width: 21%;
+			width: 	18%;
 			@include position-absolute-tr(101.4rem, 32.2rem);
 		}
 	}
@@ -61,7 +64,7 @@
 			@include position-absolute-bl(10rem, 22.9rem);
 		}
 		.p-fig_vision3 {
-			width: 40%;
+			width: 38%;
 			@include position-absolute-bl(32rem, 43rem);
 		}
 	}

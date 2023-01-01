@@ -1,0 +1,17 @@
+/* text-color */
+.text-blue {
+  color: #1B519F;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-pink {
+  color: #E989AE;
+  margin-right: 0.7rem;
+}
+
+.text-red {
+  color: #FF0000;
+}

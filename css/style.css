@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("//db.onlinewebfonts.com/c/c481f64b0f240989fa9c6971ea78673f?family=Torrent");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sawarabi+Mincho&display=swap");
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -384,7 +384,7 @@ th {
 }
 
 body {
-  font-family: "Torrent" sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* text-color */
@@ -398,6 +398,7 @@ body {
 
 .text-pink {
   color: #E989AE;
+  margin-right: 0.7rem;
 }
 
 .text-red {
@@ -615,17 +616,16 @@ html {
     background: url("../images/top_background_sp.jpg");
     background-size: 100%;
     margin-top: 11rem;
-    padding: 10rem 6rem;
+    padding: 7rem 6rem;
     height: 125rem;
   }
 }
 #top h2 {
-  line-height: 9rem;
+  line-height: 5.5rem;
   background: #FFFFFF;
   display: inline-block;
   border: 3px solid #1B519F;
-  height: 7rem;
-  padding-right: 2rem;
+  padding: 0 1rem;
 }
 #top h2:first-child {
   margin-bottom: 2.5rem;
@@ -633,6 +633,7 @@ html {
 @media screen and (min-width: 768px) {
   #top h2 {
     font-size: 4.2rem;
+    letter-spacing: 0.8rem;
   }
   #top h2:nth-child(3) {
     margin-bottom: 6.2rem;
@@ -640,16 +641,25 @@ html {
 }
 @media screen and (max-width: 767px) {
   #top h2 {
-    font-size: 3.6rem;
+    font-size: 4rem;
   }
   #top h2:nth-child(3) {
     margin-bottom: 4.6rem;
   }
 }
 #top p {
-  font-size: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   line-height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  #top p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #top p {
+    font-size: 2.3rem;
+  }
 }
 @media screen and (min-width: 768px) {
   #top .p-fig_top1 {
@@ -662,7 +672,7 @@ html {
 @media screen and (max-width: 767px) {
   #top .p-fig_top1 {
     position: absolute;
-    bottom: 16.8rem;
+    bottom: 15rem;
     right: 0;
     width: 36%;
   }
@@ -690,7 +700,8 @@ html {
 }
 @media screen and (min-width: 768px) {
   #vision {
-    padding: 30rem 32rem 15rem;
+    padding: 0 32rem 15rem;
+    overflow-y: hidden;
   }
 }
 @media screen and (max-width: 767px) {
@@ -698,12 +709,15 @@ html {
     padding: 15rem 6rem 72.9rem;
   }
 }
+#vision h2 {
+  font-family: "Sawarabi Mincho", serif;
+}
 @media screen and (min-width: 768px) {
   #vision h2 {
-    font-size: 26rem;
-    position: absolute;
-    top: -6rem;
-    left: 11.5rem;
+    font-size: 23rem;
+    line-height: 15.5rem;
+    margin-left: -20rem;
+    margin-bottom: 12rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -715,33 +729,34 @@ html {
 }
 #vision p {
   line-height: 6.5rem;
-  letter-spacing: 0.3rem;
 }
 @media screen and (min-width: 768px) {
   #vision p {
     font-size: 2.7rem;
+    letter-spacing: 0.3rem;
   }
 }
 @media screen and (max-width: 767px) {
   #vision p {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
+    letter-spacing: 0.23rem;
   }
 }
 @media screen and (min-width: 768px) {
   #vision .p-fig_vision1 {
-    width: 16%;
+    width: 15%;
     position: absolute;
     top: 16rem;
     right: 37.2rem;
   }
   #vision .p-fig_vision2 {
-    width: 18%;
+    width: 15%;
     position: absolute;
     top: 54.6rem;
     right: 16rem;
   }
   #vision .p-fig_vision3 {
-    width: 21%;
+    width: 18%;
     position: absolute;
     top: 101.4rem;
     right: 32.2rem;
@@ -761,7 +776,7 @@ html {
     left: 22.9rem;
   }
   #vision .p-fig_vision3 {
-    width: 40%;
+    width: 38%;
     position: absolute;
     bottom: 32rem;
     left: 43rem;
@@ -825,7 +840,7 @@ html {
 }
 @media screen and (max-width: 767px) {
   #todo p {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     text-align: left;
   }
 }
@@ -857,13 +872,25 @@ html {
 }
 #todo .p-card {
   line-height: initial;
-  padding: 5.5rem 4.1rem;
   text-align: center;
-  border-radius: 20rem 20rem 0 0;
   border: solid 4px #1B519F;
-  width: 41rem;
-  height: 63.3rem;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  #todo .p-card {
+    padding: 5.5rem 4.1rem;
+    width: 41rem;
+    border-radius: 20rem 20rem 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo .p-card {
+    padding: 6.5rem 4.1rem;
+    margin-bottom: 6rem;
+    width: 50rem;
+    overflow-x: hidden;
+    border-radius: 24rem 24rem 0 0;
+  }
 }
 @media screen and (min-width: 768px) {
   #todo .p-card_container {
@@ -881,8 +908,17 @@ html {
   }
 }
 #todo .p-card h4 {
-  font-size: 2.7rem;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  #todo .p-card h4 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo .p-card h4 {
+    font-size: 3.7rem;
+  }
 }
 #todo .p-card:nth-child(1) h4 {
   margin-top: 5.7rem;
@@ -894,8 +930,17 @@ html {
   margin-top: 11rem;
 }
 #todo .p-card p {
-  font-size: 2rem;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  #todo .p-card p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #todo .p-card p {
+    font-size: 2.5rem;
+  }
 }
 
 #projects {
@@ -951,8 +996,15 @@ html {
     margin: 4rem 0rem 7.6rem;
   }
 }
-#projects .p-card h3 {
-  font-size: 2.7rem;
+@media screen and (min-width: 768px) {
+  #projects .p-card h3 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #projects .p-card h3 {
+    font-size: 3rem;
+  }
 }
 #projects .p-card h4 {
   font-size: 3.4rem;
@@ -960,13 +1012,22 @@ html {
   line-height: 6rem;
 }
 #projects .p-card p {
-  font-size: 2rem;
   line-height: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  #projects .p-card p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #projects .p-card p {
+    font-size: 2.7rem;
+  }
 }
 #projects .p-card .p-num {
   font-size: 7.5rem;
   position: absolute;
-  transform: translate(0, calc(-50% - 4rem));
+  transform: translate(0, calc(-50% - 4.7rem));
 }
 
 #schedule {
@@ -1036,10 +1097,10 @@ html {
 }
 @media screen and (min-width: 768px) {
   #schedule .p-container .p-icon .p-fig_schedule1, #schedule .p-container .p-icon .p-fig_schedule2 {
-    width: 70%;
+    width: 65%;
   }
   #schedule .p-container .p-icon .p-fig_schedule3, #schedule .p-container .p-icon .p-fig_schedule4 {
-    width: 44%;
+    width: 39%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1053,7 +1114,7 @@ html {
 #schedule .p-container .p-content {
   background-color: #FFFFFF;
   width: 100%;
-  padding: 0 2.8rem 0 12rem;
+  padding: 0 4.8rem 0 13rem;
 }
 @media screen and (min-width: 768px) {
   #schedule .p-container .p-content {
@@ -1081,12 +1142,20 @@ html {
 #schedule .p-container .p-content h3 {
   font-size: 4.2rem;
 }
-#schedule .p-container .p-content time, #schedule .p-container .p-content p {
-  font-size: 2.2rem;
+@media screen and (min-width: 768px) {
+  #schedule .p-container .p-content time, #schedule .p-container .p-content p {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #schedule .p-container .p-content time, #schedule .p-container .p-content p {
+    font-size: 2.7rem;
+  }
 }
 
 #contact {
   position: relative;
+  list-style: none;
 }
 @media screen and (min-width: 768px) {
   #contact {
@@ -1235,6 +1304,30 @@ html {
     bottom: 41rem;
     right: 6.8rem;
     width: 29%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #contact .p-fig_contact1 {
+    position: absolute;
+    bottom: 10rem;
+    right: 16rem;
+    width: 32.4%;
+  }
+  #contact .p-fig_contact2 {
+    position: absolute;
+    bottom: 51rem;
+    right: 6.8rem;
+    width: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #contact .text-online {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contact .text-online {
+    margin-left: unset;
   }
 }
 

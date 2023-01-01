@@ -129,4 +129,22 @@
 			width: 29%;
 		}
 	}
+		@include mq($pc) {
+		.p-fig_contact1 {
+			@include position-absolute-br(10rem, 16rem);
+			width: 32.4%;
+		}
+		.p-fig_contact2 {
+			@include position-absolute-br(51rem, 6.8rem);
+			width: 15%;
+		}
+	}
+	.text-online {
+		@include mq($pc){
+			margin-left: 2rem;
+		}
+		@include mq($sp) {
+			margin-left: unset;	
+		}
+	}
 }

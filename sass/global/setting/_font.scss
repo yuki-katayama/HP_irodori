@@ -1,8 +1,7 @@
 //フォントに関する変数を登録します
-$common-font: 'Torrent' sans-serif;
+$common-font: 'Noto Sans JP', sans-serif;
 
-@import url('//db.onlinewebfonts.com/c/c481f64b0f240989fa9c6971ea78673f?family=Torrent');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sawarabi+Mincho&display=swap');
 body {
   font-family: $common-font;
 }
