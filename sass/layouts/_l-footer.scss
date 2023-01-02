@@ -31,5 +31,11 @@ footer {
 		transform:translate(-50%, 0);
 		font-size: 1.5rem;
 		width: 100%;
+		@include mq($pc) {
+			font-size: 1.5rem;
+		}
+		@include mq($sp) {
+			font-size: 2rem;
+		}
 	}
 }
