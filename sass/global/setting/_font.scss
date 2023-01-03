@@ -1,9 +1,9 @@
 //フォントに関する変数を登録します
-$common-font: 'Noto Sans JP', sans-serif;
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sawarabi+Mincho&display=swap');
 body {
-  font-family: $common-font;
+  font-family: dnp-shuei-gothic-gin-std,sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 // html {
 //   font-family: $common-font;
