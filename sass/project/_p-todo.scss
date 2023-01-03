@@ -33,6 +33,7 @@
 			}
 			&:nth-child(5){
 				margin-bottom: 5.9rem;
+				letter-spacing: 0.6rem;
 			}
 		}
 		@include mq($sp) {
@@ -52,12 +53,12 @@
 		}
 		@include mq($sp) {
 			font-size: 2.7rem;
-			text-align: left;
 		}
 	}
 	.p-unit {
 		@include mq($pc) {
 			font-size: 3.2rem;
+			margin: 0 1.2rem;
 		}
 		@include mq($sp) {
 			font-size: 2.7rem;
@@ -80,16 +81,16 @@
 		border: solid 4px $content-color01;
 		margin-bottom: 3rem;
 		@include mq($pc) {
-			padding: 5.5rem 4.1rem;
+			padding: 5.5rem 4.1rem 3rem;
 			width: 41rem;
 			border-radius: 20rem 20rem 0 0;
 		}
 		@include mq($sp) {
 			padding: 6.5rem 4.1rem;
 			margin-bottom: 6rem;
-			width: 50rem;
+			width: 52rem;
 			overflow-x: hidden;
-			border-radius: 24rem 24rem 0 0;
+			border-radius: 26rem 26rem 0 0;
 		}
 		&_container {
 			@include mq($pc) {
@@ -102,7 +103,7 @@
 		h4 {
 			margin-bottom: 3rem;
 			@include mq($pc) {
-				font-size: 2.7rem;
+				font-size: 2.6rem;
 			}
 			@include mq($sp) {
 				font-size: 3.7rem;
@@ -120,16 +121,19 @@
 		}
 		&:nth-child(3) {
 			h4 {
-				margin-top: 11rem;
+				margin-top: 7rem;
 			}
 		}
 		p {
 			text-align: left;
+			font-weight: 400;
 			@include mq($pc) {
 				font-size: 2rem;
+				line-height: 3.2rem;
 			}
 			@include mq($sp) {
 				font-size: 2.5rem;
+				line-height: 3.5rem;
 			}
 		}
 	}

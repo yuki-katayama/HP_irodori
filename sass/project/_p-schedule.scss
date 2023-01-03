@@ -72,7 +72,8 @@
 			width: 100%;
 			padding: 0 4.8rem 0 13rem;
 			@include mq($pc){
-				@include flex-between-align-center;;
+				display: flex;
+				align-items: center;
 				height: 16rem;
 			}
 			@include mq($sp){
@@ -80,12 +81,26 @@
 				height: 32.2rem;
 				time {
 					@include flex-between;
-					width: 70%;
+					width: 33rem;
 					margin: 2.3rem 0 3.2rem 0;
 				}
 			}
 			h3 {
 				font-size: 4.2rem;
+				@include mq($pc) {
+					margin-right: 7rem;
+				}
+				@include mq($sp) {
+					margin-right: unset;
+				}
+			}
+			time {
+				@include mq($pc) {
+					margin-right: 7rem;
+				}
+				@include mq($sp) {
+					margin-right: unset;
+				}
 			}
 			time, p {
 				@include mq($pc) {
