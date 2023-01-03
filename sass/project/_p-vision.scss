@@ -14,11 +14,12 @@
 		padding: 15rem 6rem 72.9rem;
 	}
 	h2 {
-		font-family: 'Sawarabi Mincho', serif;
 		@include mq($pc) {
-			font-size: 23rem;
-			line-height: 15.5rem;
-			margin-left: -20rem;
+			font-family: 'Sawarabi Mincho', serif;
+			font-size: 21rem;
+			letter-spacing: 1.5rem;
+			line-height: 14.5rem;
+			margin-left: -21rem;
 			margin-bottom: 12rem;
 		}
 		@include mq($sp) {
@@ -29,6 +30,7 @@
 	}
 	p {
 		line-height: 6.5rem;
+		font-weight: 400;
 		@include mq($pc) {
 			font-size: 2.7rem;
 			letter-spacing: 0.3rem;
