@@ -562,8 +562,8 @@ html {
   }
   #scroll-to-top:hover {
     position: fixed;
-    bottom: 8rem;
-    right: 5rem;
+    bottom: 7rem;
+    right: 6rem;
   }
 }
 @media screen and (max-width: 767px) {
