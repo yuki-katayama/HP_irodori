@@ -23,6 +23,8 @@
 			margin-bottom: 12rem;
 		}
 		@include mq($sp) {
+			font-weight: 400;
+			font-family: $font-family-torrent-regular;
 			font-size: 10rem;
 			margin-bottom: 12.5rem;
 			text-align: center;
