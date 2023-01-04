@@ -15,7 +15,7 @@
 	}
 	h2 {
 		@include mq($pc) {
-			font-family: 'Sawarabi Mincho', serif;
+			font-family: $font-family-mincho;
 			font-size: 21rem;
 			letter-spacing: 1.5rem;
 			line-height: 14.5rem;
