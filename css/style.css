@@ -1406,9 +1406,6 @@ html {
   }
 }
 #header .l-fig_header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1423,13 +1420,8 @@ html {
     z-index: -1;
   }
 }
-#header .l-fig_header h2 {
-  font-size: 4rem;
-  margin-left: 3rem;
-  width: 80%;
-}
 #header .l-fig_header .l-fig_header_img {
-  width: 20%;
+  width: 55%;
 }
 #header .l-inner {
   display: flex;
