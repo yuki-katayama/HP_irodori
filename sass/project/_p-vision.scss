@@ -41,8 +41,6 @@
 		}
 	}
 	@include mq($pc) {
-		.p-fig_vision1, .p-fig_vision2, .p-fig_vision3 {
-		}
 		.p-fig_vision1 {
 			width: 15%;
 			@include position-absolute-tr(16rem, 37.2rem);
