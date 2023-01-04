@@ -1142,10 +1142,10 @@ html {
 #schedule .p-container .p-content {
   background-color: #FFFFFF;
   width: 100%;
-  padding: 0 4.8rem 0 13rem;
 }
 @media screen and (min-width: 768px) {
   #schedule .p-container .p-content {
+    padding: 0 0 0 11%;
     display: flex;
     align-items: center;
     height: 16rem;
@@ -1153,6 +1153,7 @@ html {
 }
 @media screen and (max-width: 767px) {
   #schedule .p-container .p-content {
+    padding: 0 4.8rem 0 13rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1171,6 +1172,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   #schedule .p-container .p-content h3 {
+    width: 36%;
     margin-right: 7rem;
   }
 }
@@ -1181,6 +1183,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   #schedule .p-container .p-content time {
+    width: 17%;
     margin-right: 7rem;
   }
 }
@@ -1197,6 +1200,11 @@ html {
 @media screen and (max-width: 767px) {
   #schedule .p-container .p-content time, #schedule .p-container .p-content p {
     font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #schedule .p-container .p-content .p-detail {
+    width: 36%;
   }
 }
 
