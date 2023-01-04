@@ -1293,6 +1293,8 @@ html {
 #contact .p-container-text {
   margin-bottom: 13.6rem;
   line-height: 7rem;
+  margin-left: 3rem;
+  text-indent: -1em;
 }
 #contact .p-container-text p {
   font-size: 3.6rem;
