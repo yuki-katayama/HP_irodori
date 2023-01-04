@@ -1444,6 +1444,7 @@ html {
   align-items: center;
 }
 #header .l-button_wrapper button:before, #header .l-button_wrapper button:after {
+  font-family: "dnp-shuei-gothic-gin-std", sans-serif;
   content: "参加応募はこちら";
 }
 @media screen and (min-width: 768px) {
