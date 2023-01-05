@@ -31,11 +31,18 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           FROM_PATH: "."
           DEST_PATH: "s3://irodori-cdk"
-          # S3のbucket-for-deploying-react-projectバケットにデプロイ
-      - name: delete cloudfront Cache  # S3にデプロイ
+      - name: delete cloudfront Cache
         uses: chetan/invalidate-cloudfront-action@v1.2
         env:
           DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_ID }}
+          PATHS: "/*"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+      - name: delete cloudfront www Cache
+        uses: chetan/invalidate-cloudfront-action@v1.2
+        env:
+          DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_WWW_ID }}
           PATHS: "/*"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
