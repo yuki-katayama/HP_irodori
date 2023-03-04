@@ -6,6 +6,24 @@
 
 #contact {
 	position: relative;
+	.youtube__aspect-ratio {
+		aspect-ratio: 16 / 9;
+		margin-bottom: 1rem;
+	}
+	.youtube__aspect-ratio iframe {
+		width: 100%;
+		height: 100%;
+	}
+	@include mq($pc){
+		.youtube__aspect-ratio {
+			width: 60%;
+		}
+	}
+	@include mq($sp){
+		.youtube__aspect-ratio {
+			width: 100%;
+		}
+	}
 	@include mq($pc){
 		padding: 12.3rem 16rem 10rem;
 		&::before {

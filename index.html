@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="茨城県鉾田市をフィールドに、地域の課題を解決するためのスマートフォンアプリの開発に挑戦！鉾田市にゆかりのある高校生・大学生向けのプログラムです。" />
+	<meta property="og:url" content="https://hokotawagamamalab.jp/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ほこたワガママLab│鉾田市の課題を解決するアプリ開発に挑戦">
+	<meta property="og:image" content="https://hokotawagamamalab.jp/images/hokota_wagamama_OGP.jpg">
 	<title>ほこたワガママLab│鉾田市の課題を解決するアプリ開発に挑戦</title>
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 	<link rel="icon" sizes="16x16" href="favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!-- fontの反映 -->
-	<script>
-		(function(d) {
-		  var config = {
-			kitId: 'nsx2svb',
-			scriptTimeout: 3000,
-			async: true
-		  },
-		  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-		})(document);
-	</script>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6L3B4WZ7ZS"></script>
 	<script>
@@ -37,18 +30,18 @@
 <header id="header" class="l-header text-blue">
 	<div class="u-flex l-inner">
 		<button class="l-fig_header" onclick=scrollToTop()>
-			<figure class="l-fig_header_img"><img src="images/hokota_logo.png" width="100%" /></figure>
+			<figure class="l-fig_header_img"><img src="images/hokota_logo.png" width="100%" alt="鉾田市 ワカガママラボ"/></figure>
 		</button>
 		<div class="l-flex_center pc">
 			<ul class="u-flex font-torrent-medium">
-				<li><button onclick="location.href='#top'">Top</button></li>
+				<li><button onclick=scrollToTop()>Top</button></li>
 				<li><button onclick="location.href='#vision'">Vision</button></li>
 				<li><button onclick="location.href='#todo'">What to Do</button></li>
 				<li><button onclick="location.href='#projects'">Projects</button></li>
 				<li><button onclick="location.href='#schedule'">Schedule</button></li>
 			<ul>
 			<div class="l-button_wrapper">
-				<button class="button text-white" onclick="location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=s-m8E43DZEe2NiaVXDtXUMf7brQOaz1MppD2q4YNM01URUlKUlJQRFEwUVlORkVIUzVHU05BRkMwRS4u'"></button>
+				<button class="button text-white" onclick="location.href='https://forms.office.com/r/jDDNEj205f'"></button>
 			</div>
 		</div>
 		<div class="sp">
@@ -58,7 +51,7 @@
 			<div class="hamburger_nav font-torrent-medium">
 				<ul>
 					<li onclick="hamburger()">
-						<button onclick="location.href='#top'">Top</button>
+						<button onclick=scrollToTop()>Top</button>
 					</li>
 					<li onclick="hamburger()">
 						<button onclick="location.href='#vision'">Vision</button>
@@ -74,7 +67,7 @@
 					</li>
 				</ul>
 				<div class="l-button_wrapper">
-					<button class="button text-white" onclick="location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=s-m8E43DZEe2NiaVXDtXUMf7brQOaz1MppD2q4YNM01URUlKUlJQRFEwUVlORkVIUzVHU05BRkMwRS4u'"></button>
+					<button class="button text-white" onclick="location.href='https://forms.office.com/r/jDDNEj205f'"></button>
 				</div>
 			</div>
 		</div>
@@ -203,12 +196,10 @@
 			<div class="p-content">
 				<h3>オンライン説明会</h3>
 				<time>
-					<p>1月17日</p>
-					<p>19:00 ~ 20:00</p>
+					<p>1月17日 19:00 ~ 20:00</p>
 				</time>
 				<div class="p-detail">
-					<p>※任意参加</p>
-					<p>プログラムの概要をご紹介します。</p>
+					<p>レポートは<a href="https://note.com/irodori_group/n/n0095d819c4a3" class="text-link">こちら</a></p>
 				</div>
 			</div>
 		</section>
@@ -219,11 +210,17 @@
 			<div class="p-content">
 				<h3>ワークショップ</h3>
 				<time>
-					<p>全３回</p>
+					<p>①2月6日 18:00~21:00</p>
+					<p class="sp" style="margin-bottom: 1.3rem;"> オンライン開催</p>
+					<p>②2月19日 13:00~16:00</p>
+					<p class="sp"  style="margin-bottom: 1.3rem;">東京・鉾田・オンライン開催</p>
+					<p>③2月27日 18:00~21:00</p>
+					<p class="sp" style="margin-bottom: -4rem;">オンライン開催</p>
 				</time>
-				<div class="p-detail">
-					<p>オンライン２回</p>
-					<p>東京にてリアル開催を１回行います。</p>
+				<div class="p-detail pc">
+					<p> オンライン開催</p>
+					<p>東京・鉾田・オンライン開催</p>
+					<p>オンライン開催</p>
 				</div>
 			</div>
 		</section>
@@ -234,7 +231,8 @@
 			<div class="p-content">
 				<h3>アプリ開発</h3>
 				<time>
-					<p>全１回</p>
+					<p>3月3日 18:00~21:00</p>
+					<p>オンライン開催</p>
 				</time>
 				<div class="p-detail">
 					<p>開発の方法を学び、</p>
@@ -249,7 +247,8 @@
 			<div class="p-content">
 				<h3>コンテスト</h3>
 				<time>
-					<p>全１回</p>
+					<p>3月14日 19:00~21:00</p>
+					<p>東京・鉾田・オンライン開催</p>
 				</time>
 				<div class="p-detail">
 					<p>オンラインで各地をつないで</p>
@@ -268,11 +267,14 @@
 		<section class="p-container">
 			<div class="p-container-text">
 				<h3><span class="text-pink">●</span>説明会</h3>
-				<p>2023年1月17日（火）<br class="sp"/>19:00〜20:00<br class="sp"/><span class="text-pink text-online">※オンラインで開催</span></p>
+				<p>2023年1月17日（火）<br class="sp"/>19:00〜20:00</p>
+				<div class="youtube__aspect-ratio">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/inuNYQQVsNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
 				<h3><span class="text-pink">●</span>開催時期</h3>
 				<p>2023年2月から3月中に実施</p>
 				<h3><span class="text-pink">●</span>場所</h3>
-				<p>オンライン、もしくは東京開催</p>
+				<p>オンライン、もしくは東京と鉾田市会場にて開催</p>
 				<span class="text-pink">※いずれもオンライン参加が可能となります</span>
 				<h3><span class="text-pink">●</span>対象者</h3>
 				<ul>
@@ -280,7 +282,7 @@
 					<li style="text-indent:-1em; list-style: none;"><p>・進学を機に鉾田市を離れた大学生、大学院生、専門学生、および高等専門学生など。</p></li>
 				</ul>
 			</div>
-			<div class="p-button_wrapper"><button class="button text-white" onclick="location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=s-m8E43DZEe2NiaVXDtXUMf7brQOaz1MppD2q4YNM01URUlKUlJQRFEwUVlORkVIUzVHU05BRkMwRS4u'">ほこたワガママLabに参加応募する</button></div>
+			<div class="p-button_wrapper"><button class="button text-white" onclick="location.href='https://forms.office.com/r/jDDNEj205f'">ほこたワガママLabに参加応募する</button></div>
 		</section>
 		<figure class="p-fig_contact1"><img src="images/contact.jpg" width="100%" /></figure>
 		<figure class="p-fig_contact2"><img src="images/ribbon.jpg" width="100%" /></figure>
@@ -288,7 +290,7 @@
 </body>
 <footer>
 	<div class="p-fig">
-		<figure class="p-fig_contact1"><img src="images/hokota_logo.png" width="100%" /></figure>
+		<figure class="p-fig_contact1"><img src="images/hokota_logo.png" width="90%" /></figure>
 		<figure class="p-fig_contact1"><img src="images/footer_2.svg" width="100%" /></figure>
 		<figure class="p-fig_contact1"><img src="images/footer_3.svg" width="100%" /></figure>
 	</div>
