@@ -409,7 +409,7 @@ body {
 
 /* text-color */
 .text-blue {
-  color: #1B519F;
+  color: #3C64AF;
 }
 
 .text-white {
@@ -493,7 +493,7 @@ html .text-link {
   box-shadow: unset !important;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #1B519F !important;
+  background: #3C64AF !important;
   border: solid 1px #FFFFFF !important;
   margin: 0 1rem !important;
 }
@@ -515,7 +515,7 @@ html .text-link {
 .hamburger .border {
   width: 100%;
   height: 2px;
-  background-color: #1B519F;
+  background-color: #3C64AF;
   transition: ease 0.4s;
   position: absolute;
   top: 0rem;
@@ -524,7 +524,7 @@ html .text-link {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #1B519F;
+  background-color: #3C64AF;
   transition: ease 0.4s;
   position: absolute;
   top: -1.6rem;
@@ -533,7 +533,7 @@ html .text-link {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #1B519F;
+  background-color: #3C64AF;
   transition: ease 0.4s;
   position: absolute;
   bottom: -1.6rem;
@@ -555,7 +555,7 @@ html .text-link {
   inset: 0;
   transform: translateX(100%);
   background-color: #FFFFFF;
-  color: #1B519F;
+  color: #3C64AF;
   transition: ease 0.4s;
   height: 100vh;
   z-index: -1;
@@ -649,7 +649,7 @@ html .text-link {
   line-height: 5.5rem;
   background: #FFFFFF;
   display: inline-block;
-  border: 3px solid #1B519F;
+  border: 3px solid #3C64AF;
   padding: 0 1rem;
 }
 #top h2:first-child {
@@ -721,7 +721,7 @@ html .text-link {
 
 #vision {
   position: relative;
-  background-color: #1B519F;
+  background-color: #3C64AF;
 }
 @media screen and (min-width: 768px) {
   #vision {
@@ -886,7 +886,7 @@ html .text-link {
   width: 100%;
   max-width: 100%;
   height: 3px;
-  border-bottom: solid 3px #1B519F;
+  border-bottom: solid 3px #3C64AF;
 }
 @media screen and (min-width: 768px) {
   #todo .p-border {
@@ -901,7 +901,7 @@ html .text-link {
 #todo .p-card {
   line-height: initial;
   text-align: center;
-  border: solid 4px #1B519F;
+  border: solid 4px #3C64AF;
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 768px) {
@@ -1006,7 +1006,7 @@ html .text-link {
 #projects .p-card {
   padding: 4rem 4.2rem 0;
   background-color: #FFFFFF;
-  border: solid 4px #1B519F;
+  border: solid 4px #3C64AF;
 }
 @media screen and (min-width: 768px) {
   #projects .p-card {
@@ -1065,7 +1065,7 @@ html .text-link {
 }
 
 #schedule {
-  background: #1B519F;
+  background: #3C64AF;
   padding-top: 15rem;
   text-align: center;
 }
@@ -1079,18 +1079,18 @@ html .text-link {
     padding: 15rem 6rem 15rem 14rem;
   }
 }
-#schedule h2 {
+#schedule > h2 {
   text-align: center;
   margin-right: 8rem;
 }
 @media screen and (min-width: 768px) {
-  #schedule h2 {
+  #schedule > h2 {
     font-size: 6rem;
     margin-bottom: 10rem;
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule h2 {
+  #schedule > h2 {
     font-size: 5.5rem;
     margin-bottom: 13.7rem;
   }
@@ -1210,6 +1210,18 @@ html .text-link {
   #schedule .p-container .p-content .p-detail {
     width: 40%;
   }
+}
+
+#awards h2 {
+  font-size: 3rem;
+  color: #E989AE;
+}
+#awards h3 {
+  font-size: 6rem;
+  color: #FFFFFF;
+}
+#awards .img {
+  width: 100%;
 }
 
 #contact {
