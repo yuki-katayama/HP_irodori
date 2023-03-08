@@ -1095,7 +1095,7 @@ html .text-link {
     margin-bottom: 13.7rem;
   }
 }
-#schedule .p-container {
+#schedule > .p-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1105,11 +1105,11 @@ html .text-link {
   line-height: 3.5rem;
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container {
+  #schedule > .p-container {
     height: 20rem;
   }
 }
-#schedule .p-container .p-icon {
+#schedule > .p-container .p-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1119,39 +1119,39 @@ html .text-link {
   background-color: #E989AE;
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-icon {
+  #schedule > .p-container .p-icon {
     height: 20rem;
     width: 20rem;
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule .p-container .p-icon {
+  #schedule > .p-container .p-icon {
     height: 16rem;
     width: 16rem;
   }
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-icon .p-fig_schedule1, #schedule .p-container .p-icon .p-fig_schedule2 {
+  #schedule > .p-container .p-icon .p-fig_schedule1, #schedule > .p-container .p-icon .p-fig_schedule2 {
     width: 65%;
   }
-  #schedule .p-container .p-icon .p-fig_schedule3, #schedule .p-container .p-icon .p-fig_schedule4 {
+  #schedule > .p-container .p-icon .p-fig_schedule3, #schedule > .p-container .p-icon .p-fig_schedule4 {
     width: 39%;
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule .p-container .p-icon .p-fig_schedule1, #schedule .p-container .p-icon .p-fig_schedule2 {
+  #schedule > .p-container .p-icon .p-fig_schedule1, #schedule > .p-container .p-icon .p-fig_schedule2 {
     width: 60%;
   }
-  #schedule .p-container .p-icon .p-fig_schedule3, #schedule .p-container .p-icon .p-fig_schedule4 {
+  #schedule > .p-container .p-icon .p-fig_schedule3, #schedule > .p-container .p-icon .p-fig_schedule4 {
     width: 38%;
   }
 }
-#schedule .p-container .p-content {
+#schedule > .p-container .p-content {
   background-color: #FFFFFF;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-content {
+  #schedule > .p-container .p-content {
     padding: 0 0 0 10%;
     display: flex;
     align-items: center;
@@ -1159,69 +1159,204 @@ html .text-link {
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule .p-container .p-content {
+  #schedule > .p-container .p-content {
     padding: 0 4.8rem 0 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 36.2rem;
   }
-  #schedule .p-container .p-content time {
+  #schedule > .p-container .p-content time {
     width: 100%;
     margin: 3.3rem 0 3.2rem 0;
   }
 }
-#schedule .p-container .p-content h3 {
+#schedule > .p-container .p-content h3 {
   font-size: 4.2rem;
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-content h3 {
+  #schedule > .p-container .p-content h3 {
     width: 38%;
     margin-right: 4rem;
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule .p-container .p-content h3 {
+  #schedule > .p-container .p-content h3 {
     margin-right: unset;
   }
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-content time {
+  #schedule > .p-container .p-content time {
     width: 31%;
     margin-right: 4rem;
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule .p-container .p-content time {
+  #schedule > .p-container .p-content time {
     margin-right: unset;
   }
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-content time, #schedule .p-container .p-content p {
+  #schedule > .p-container .p-content time,
+#schedule > .p-container .p-content p {
     font-size: 2.2rem;
   }
 }
 @media screen and (max-width: 767px) {
-  #schedule .p-container .p-content time, #schedule .p-container .p-content p {
+  #schedule > .p-container .p-content time,
+#schedule > .p-container .p-content p {
     font-size: 2.7rem;
   }
 }
 @media screen and (min-width: 768px) {
-  #schedule .p-container .p-content .p-detail {
+  #schedule > .p-container .p-content .p-detail {
     width: 40%;
   }
 }
 
-#awards h2 {
-  font-size: 3rem;
-  color: #E989AE;
+#awards {
+  position: relative;
+  margin-top: 29rem;
 }
-#awards h3 {
-  font-size: 6rem;
+@media screen and (min-width: 768px) {
+  #awards .awards-title {
+    position: absolute;
+    top: -11.5rem;
+    left: -12rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards .awards-title {
+    position: absolute;
+    top: -11.5rem;
+    left: -8rem;
+  }
+}
+#awards .awards-title > h2 {
+  font-size: 6.4rem;
+  color: #E989AE;
+  line-height: 0;
+  display: inline-block;
+  margin-right: 12rem;
+}
+#awards .awards-title > h3 {
+  font-size: 14rem;
   color: #FFFFFF;
 }
-#awards .img {
+@media screen and (min-width: 768px) {
+  #awards .p-fig-logo {
+    position: absolute;
+    top: 65rem;
+    right: -3rem;
+    width: 45rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards .p-fig-logo {
+    position: absolute;
+    top: 140rem;
+    right: -3rem;
+    width: 26.2rem;
+  }
+}
+#awards > section {
+  margin-left: -8rem;
+}
+@media screen and (min-width: 768px) {
+  #awards > section {
+    width: 128rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards > section {
+    width: 63rem;
+  }
+}
+#awards .p-container {
+  height: 100%;
+  font-size: 2.7rem;
+  line-height: 6.5rem;
+  text-align: left;
+  font-weight: 100;
+}
+#awards .p-content {
+  background: linear-gradient(155deg, #ed9bbb, #606db0);
+}
+@media screen and (min-width: 768px) {
+  #awards .p-content {
+    padding: 12rem 6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards .p-content {
+    padding: 5rem 5rem 10rem 5rem;
+  }
+}
+#awards .p-content-text {
+  margin-bottom: 10rem;
+  letter-spacing: 0.22rem;
+}
+@media screen and (min-width: 768px) {
+  #awards .p-content-title {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards .p-content-title {
+    font-size: 3rem;
+  }
+}
+#awards .p-fig-award {
   width: 100%;
+}
+#awards .p-button-wrapper .p-button {
+  width: 60rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3.7rem 0;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  #awards .p-button-wrapper .p-button {
+    width: 60rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards .p-button-wrapper .p-button {
+    width: 100%;
+  }
+}
+#awards button:nth-child(2) {
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  #awards button:nth-child(2) {
+    margin-top: 4.6rem !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards button:nth-child(2) {
+    margin-top: 5rem !important;
+  }
+}
+#awards .p-time {
+  letter-spacing: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  #awards .p-time {
+    font-size: 5rem;
+    margin-bottom: 20rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #awards .p-time {
+    font-size: 3.6rem;
+    margin-bottom: 10rem;
+  }
 }
 
 #contact {

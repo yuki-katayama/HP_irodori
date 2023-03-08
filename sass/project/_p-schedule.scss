@@ -1,137 +1,250 @@
 //各ファイルは必ず登録済みの変数を最初に読み込みます
 //as *で読み込みファイル名を省略することができます
-@use "../global"as *;
+@use "../global" as *;
 
 //scheduleセクションのモジュールの設定を定義します
 
 #schedule {
-	background: $content-color01;
-	padding-top: 15rem;
-	text-align: center;
-	@include mq($pc) {
-		padding: 15rem 32rem  15rem 40rem;
-	}
-	@include mq($sp) {
-		padding: 15rem 6rem 15rem 14rem;
-	}
-	 > h2 {
-		text-align: center;
-		margin-right: 8rem;
-		@include mq($pc) {
-			font-size: 6rem;
-			margin-bottom: 10rem;
-		}
-		@include mq($sp) {
-			font-size: 5.5rem;
-			margin-bottom: 13.7rem;
-		}
-	}
-	> .p-container {
-		@include flex-center;
-		position: relative;
-		margin: 3rem 0;
-		text-align: left;
-		line-height: 3.5rem;
-		@include mq($pc) {
-			height: 20rem;
-		}
-		.p-icon {
-			@include flex-center;
-			position: absolute;
-			left: -10rem;
-			border-radius: 100%;
-			background-color: $content-color03;
-			@include mq($pc) {
-				height: 20rem;
-				width: 20rem;
-			}
-			@include mq($sp) {
-				height: 16rem;
-				width: 16rem;
-			}
-			.p-fig_schedule {
-				@include mq($pc) {
-					&1, &2 {
-						width: 65%;
-					}
-					&3, &4 {
-						width: 39%;
-					}
-				}
-				@include mq($sp) {
-					&1, &2 {
-						width: 60%;
-					}
-					&3, &4 {
-						width: 38%;
-					}
-				}
-			}
-		}
-		.p-content {
-			background-color: $content-color02;
-			width: 100%;
-			@include mq($pc){
-				padding: 0 0 0 10%;
-				display: flex;
-				align-items: center;
-				height: 16rem;
-			}
-			@include mq($sp){
-				padding: 0 4.8rem 0 12rem;
-				@include flex-column-just-center;
-				height: 36.2rem;
-				time {
-					width: 100%;
-					margin: 3.3rem 0 3.2rem 0;
-				}
-			}
-			h3 {
-				font-size: 4.2rem;
-				@include mq($pc) {
-					width: 38%;
-					margin-right: 4rem;
-				}
-				@include mq($sp) {
-					margin-right: unset;
-				}
-			}
-			time {
-				@include mq($pc) {
-					width: 31%;
-					margin-right: 4rem;
-				}
-				@include mq($sp) {
-					margin-right: unset;
-				}
-			}
-			time, p {
-				@include mq($pc) {
-					font-size: 2.2rem;
-				}
-				@include mq($sp) {
-					font-size: 2.7rem;
-				}
-			}
-			.p-detail {
-				@include mq($pc) {
-					width: 40%;
-				}
-			}
-		}
-	}
+  background: $content-color01;
+  padding-top: 15rem;
+  text-align: center;
+  @include mq($pc) {
+    padding: 15rem 32rem 15rem 40rem;
+  }
+  @include mq($sp) {
+    padding: 15rem 6rem 15rem 14rem;
+  }
+  > h2 {
+    text-align: center;
+    margin-right: 8rem;
+    @include mq($pc) {
+      font-size: 6rem;
+      margin-bottom: 10rem;
+    }
+    @include mq($sp) {
+      font-size: 5.5rem;
+      margin-bottom: 13.7rem;
+    }
+  }
+  > .p-container {
+    @include flex-center;
+    position: relative;
+    margin: 3rem 0;
+    text-align: left;
+    line-height: 3.5rem;
+    @include mq($pc) {
+      height: 20rem;
+    }
+    .p-icon {
+      @include flex-center;
+      position: absolute;
+      left: -10rem;
+      border-radius: 100%;
+      background-color: $content-color03;
+      @include mq($pc) {
+        height: 20rem;
+        width: 20rem;
+      }
+      @include mq($sp) {
+        height: 16rem;
+        width: 16rem;
+      }
+      .p-fig_schedule {
+        @include mq($pc) {
+          &1,
+          &2 {
+            width: 65%;
+          }
+          &3,
+          &4 {
+            width: 39%;
+          }
+        }
+        @include mq($sp) {
+          &1,
+          &2 {
+            width: 60%;
+          }
+          &3,
+          &4 {
+            width: 38%;
+          }
+        }
+      }
+    }
+    .p-content {
+      background-color: $content-color02;
+      width: 100%;
+      @include mq($pc) {
+        padding: 0 0 0 10%;
+        display: flex;
+        align-items: center;
+        height: 16rem;
+      }
+      @include mq($sp) {
+        padding: 0 4.8rem 0 12rem;
+        @include flex-column-just-center;
+        height: 36.2rem;
+        time {
+          width: 100%;
+          margin: 3.3rem 0 3.2rem 0;
+        }
+      }
+      h3 {
+        font-size: 4.2rem;
+        @include mq($pc) {
+          width: 38%;
+          margin-right: 4rem;
+        }
+        @include mq($sp) {
+          margin-right: unset;
+        }
+      }
+      time {
+        @include mq($pc) {
+          width: 31%;
+          margin-right: 4rem;
+        }
+        @include mq($sp) {
+          margin-right: unset;
+        }
+      }
+      time,
+      p {
+        @include mq($pc) {
+          font-size: 2.2rem;
+        }
+        @include mq($sp) {
+          font-size: 2.7rem;
+        }
+      }
+      .p-detail {
+        @include mq($pc) {
+          width: 40%;
+        }
+      }
+    }
+  }
 }
 
 #awards {
-	h2 {
-		font-size: 3rem;
-		color: $content-color03;
-	}
-	h3 {
-		font-size: 6rem;
-		color: $content-color02;
-	}
-	.img {
+  position: relative;
+  margin-top: 29rem;
+  .awards-title {
+    @include mq($pc) {
+      @include position-absolute-tl(-11.5rem, -12rem);
+    }
+
+    @include mq($sp) {
+      @include position-absolute-tl(-11.5rem, -8rem);
+    }
+
+    > h2 {
+      font-size: 6.4rem;
+      color: $content-color03;
+      line-height: 0;
+      display: inline-block;
+      margin-right: 12rem;
+    }
+    > h3 {
+      font-size: 14rem;
+      color: $content-color02;
+    }
+  }
+  .p-fig-logo {
+	@include mq($pc) {
+		@include position-absolute-tr(65rem, -3rem);
+		width: 45rem;
+	  }
+	@include mq($sp) {
+		@include position-absolute-tr(140rem, -3rem);
+		width: 26.2rem;
+	  }
+  }
+
+  > section {
+    @include mq($pc) {
+      width: 128rem;
+    }
+    @include mq($sp) {
+      width: 63rem;
+    }
+    margin-left: -8rem;
+  }
+
+  .p-container {
+    height: 100%;
+    font-size: 2.7rem;
+    line-height: 6.5rem;
+    text-align: left;
+    font-weight: 100;
+  }
+
+  .p-content {
+    background: linear-gradient(155deg, #ed9bbb, #606db0);
+    @include mq($pc) {
+      padding: 12rem 6rem;
+    }
+
+    @include mq($sp) {
+      padding: 5rem 5rem 10rem 5rem;
+    }
+
+    &-text {
+      margin-bottom: 10rem;
+      letter-spacing: 0.22rem;
+    }
+	&-title {
+	  @include mq($pc) {
+		  font-size: 2.7rem;
+		}
+	  @include mq($sp) {
+		  font-size: 3rem;
+		}
+	  }
+  }
+
+  .p-fig-award {
+    width: 100%;
+  }
+  .p-button-wrapper {
+    .p-button {
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding: 3.7rem 0;
+      border: 2px solid $content-color02;
+      border-radius: 5px;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+	  @include mq($pc) {
+		width: 60rem;
+	  }
+	  @include mq($sp) {
 		width: 100%;
+	  }
+    }
+  }
+  & button:nth-child(2) {
+    background-color: $content-color02;
+	@include mq($pc) {
+		margin-top: 4.6rem !important;
+	  }
+	@include mq($sp) {
+		margin-top: 5rem !important;
 	}
+  }
+
+  .p-time {
+    letter-spacing: 0.5rem;
+	@include mq($pc) {
+		font-size: 5rem;
+		margin-bottom: 20rem;
+	  }
+	  @include mq($sp) {
+		font-size: 3.6rem;
+		margin-bottom: 10rem;
+	  }
+  }
 }
